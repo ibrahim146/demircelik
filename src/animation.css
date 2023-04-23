@@ -1,15 +1,15 @@
-ul li #animation:focus,
-ul li #animation:hover {
+.animation:focus,
+.animation:hover {
   color: #fff;
 }
 
-ul li #animation:focus:after,
-ul li #animation:hover:after {
+.animation:focus:after,
+.animation:hover:after {
   width: 100%;
   left: 0%;
 }
 
-ul li #animation:after {
+.animation:after {
   content: "";
   pointer-events: none;
   bottom: -2px;

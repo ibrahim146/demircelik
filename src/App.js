@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Navbar';
 
@@ -6,16 +6,35 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <hr />
       <div className='alan'>
-        <div className='alann'>
-          <img src="https://picsum.photos/id/242/200" alt="" />
+        <div class="card" data-aos="fade-right">
+          <div class="img-container">
+            <div class="img">
+              <img src="https://picsum.photos/id/111/600/600" alt="" />
+            </div>
+            <div class="description cardd">
+              <span class="title">
+                Card
+              </span>
+            </div>
+          </div>
         </div>
-        <div className='alann'>
-          <img src="https://picsum.photos/id/237/200" alt="" />
 
+        <div class="card" data-aos="fade-left">
+          <div class="img-container">
+            <div class="img">
+              <img src="https://picsum.photos/id/115/600/600" alt="" />
+            </div>
+            <div class="description cardd">
+              <span  class="title">
+                Card
+              </span>
+            </div>
+          </div>
         </div>
 
-
+      
       </div>
 
     </div>
