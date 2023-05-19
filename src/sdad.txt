@@ -1,0 +1,5 @@
+  <Router>
+          <Route path="/hakkimizda" component={Hakkimizda} />                            
+          <Route path="/kullanicilar" component={Kullanicilar} />           
+          <Route path="/" component={Anasayfa}>
+    </Router>

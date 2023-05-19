@@ -2,24 +2,26 @@ import React, { useState } from 'react';
 import './css.css';
 import './style.css';
 import  resim  from "./image/logo.png";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [barsclass, setbarsclass] = useState("close")
   return (
     <>
       <div className='navbar'>
-        <div className='logo'>
+        <Link to="/" className='logo'>
          <img  data-aos="fade-right" src={resim} alt="" />
-        </div>
+        </Link>
 
         <div className={barsclass} >
           <ul >
-            <li data-aos="fade-down" id='animation'>anasayfa</li>
-            <li data-aos="fade-down" id='animation'>iletişim</li>
-            <li data-aos="fade-down" id='animation'>galerimiz</li>
-            <li data-aos="fade-down" id='animation'>hakkımızda</li>
-            <li data-aos="fade-down" id='animation'>anasayfa</li>
-            <li data-aos="fade-down" id='animation'>anasayfa</li>
+
+            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >anasayfa</Link></li>
+            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >ıletisim</Link></li>
+            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >hakkımızda</Link></li>
+            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >galerimiz</Link></li>
+            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >anasayfa</Link></li>
+            
             
           </ul>
         </div>

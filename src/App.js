@@ -2,43 +2,25 @@
 import './App.css';
 import './style.css';
 import Navbar from './Navbar';
+import Cart from './Cart.jsx'
+import {  Routes } from 'react-router-dom';
+import All from './All';
+import All2 from './All2';
 
-function App() {
+import { Route  } from 'react-router-dom';
+function  App() {
   return (
     <div className="App">
       <Navbar />
-      <hr />
-      <div className='alan'>
-        <div class="card" data-aos="fade-right">
-          <div class="img-container">
-            <div class="img">
-              <img src="https://picsum.photos/id/111/600/600" alt="" />
-            </div>
-            <div class="description cardd">
-              <span class="title">
-                Card
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-aos="fade-left">
-          <div class="img-container">
-            <div class="img">
-              <img src="https://picsum.photos/id/115/600/600" alt="" />
-            </div>
-            <div class="description cardd">
-              <span  class="title">
-                Card
-              </span>
-            </div>
-          </div>
-        </div>
-
+     
       
-      </div>
-
-    </div>
+      <Routes>
+      <Route exact path="/" element={<Cart />} />
+      <Route exact path="/çelikkonstrüksiyonveferforjegrubu" element={<All />} />                            
+      <Route exact path="/ofismetalaksamları" element={<All2 />} />                            
+     
+      </Routes>  </div>
+    
   );
 }
 

@@ -9,9 +9,9 @@
   
   }
   .alan{
-    margin-top: 10px;
+    margin-top: 50px;
     width: 100%;
-    height: 100vh;
+    height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,8 @@
     gap: 50px;
   }
   .navbar{
-    position:fixed; top: 0;
+    position:sticky; 
+    top: 0;
     color: white;
     background: linear-gradient(50deg, white,rgb(98, 98, 228), blue);
     display: flex;
@@ -49,20 +50,18 @@
     justify-content: space-between;
     align-items: center;
   }
-  .navbar .menü ul li{
-    list-style-type: none;
+  .navbar .menü ul li a{
+    text-decoration: none;
     margin: 10px;
-    font-size: 25px;
+    font-size: 17px;
+    color: white;
    
   }
-  .navbar .menü ul li:hover{
-    color: rgb(188, 184, 184);
+  .navbar .menü ul li a:hover{
+    color: white;
     cursor: pointer;
   }
-  .navbar .close ul li:hover{
-    color: rgb(188, 184, 184);
-    cursor: pointer;
-  }
+ 
   .navbar .close{
     display: flex;
     align-items: center;
@@ -78,11 +77,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  .navbar .close ul li{
-    list-style-type: none;
+  .navbar .close ul li a{
+    text-decoration: none;
     margin: 10px;
-    font-size: 20px;
-    
+    font-size: 17px;
+    color: white;
   }
   
   
@@ -95,10 +94,54 @@
     position: relative;
     right: 15px;
   }
+
+
+  .buttonn {
+    font-size: 2px;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .buttonn:focus,
+  .buttonn:hover {
+    color: #fff;
+  }
+  
+  .buttonn:focus:after,
+  .buttonn:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .buttonn:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+
   @media (max-width:1265px) {
     .navbar{
         position:sticky; top:0px; left:0px; right:0px;
-    justify-content: space-between;
+        justify-content: space-between;
+      
     }
     .navbar .logo{
         margin-left: 10px;
@@ -158,8 +201,8 @@
         margin-left: 10px;
     }
     .barss{
-        display: block;
-    }    
+      display: block;
+  }     
     .navbar .menü ul {
         border-radius: 10px;
         width: 250px;
@@ -213,8 +256,8 @@
         margin-left: 10px;
     }
     .barss{
-        display: block;
-    }    
+      display: block;
+  }    
     .navbar .menü ul {
         border-radius: 10px;
         width: 250px;
