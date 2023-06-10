@@ -11,3 +11,368 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+
+.slides{
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  
+}
+.slide:nth-child(1){
+  background-image: url("./image/carusel1.jpg");
+}
+.slide:nth-child(2){
+  background-image: url("./image/carusel.jpg");
+}
+.slide:nth-child(3){
+  background-image: url("./image/resim2.jpg");
+}
+.slide{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  animation: sliding 2s ease;
+  display: none;
+}
+.slide.active{
+  display: block;
+}
+@keyframes sliding{
+  from{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slidecontainer{
+  width: 1140px;
+  height: 100%;
+  margin: auto;
+  padding: 0 15px;
+  position: relative;
+
+}
+
+.slide .content{
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(32, 28, 28);
+  
+}
+.slide .content h1 {
+  font-size: 3rem;
+  opacity: 0;
+  animation:  captionanimasyon 0.5s ease-in-out forwards;
+  animation-delay: 0.6s;
+  
+}
+
+.slide .content p {
+  font-size: 18px;
+  margin: 5px 0 30px;
+  color: rgb(36, 31, 31);
+  text-align: right;
+  opacity: 0;
+  animation: captionanimasyon 0.5s ease-in-out forwards;
+  animation-delay: 0.8s;
+  z-index: 1;
+}
+
+.slide .content a{
+  background-color:rgb(85, 85, 243);
+  padding: 7px 15px;
+  text-decoration: none;
+  color: aliceblue;
+  opacity: 0;
+  animation: captionanimasyon 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes captionanimasyon {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width:1140px){
+  .slidecontainer{
+    width: 100%;
+    padding: 0 15px;
+  }
+  .slide{
+    background-position-x: 50%;
+    }
+}
+@media (max-width:861px){
+  .slide:nth-child(1){
+    background-image: url("./image/resim.jpg");
+  }
+  .slide:nth-child(2){
+    background-image: url("./image/phone-image1.jpg");
+  }
+  .slide:nth-child(3){
+    background-image: url("./image/resim1.jpg");
+  }
+}
+
+.slides .control{
+  width: 100%;
+  margin: 50vh 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.slides .next,
+.slides .prew{
+  cursor: pointer;
+  background-color: rgb(96, 96, 238);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  opacity: 0.5;
+  transition: 0.5s;
+
+}
+
+.slides .next:hover,
+.slides .prew:hover{
+    opacity: 1;
+}
+
+
+.continue-application {
+  opacity: 0;
+  animation: captionanimasyon 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+  --color: #fff;
+  --background: rgb(83, 83, 199);
+  --background-hover: rgb(83, 83, 199);
+  --background-left: rgb(83, 83, 199);
+  --folder: #F3E9CB;
+  --folder-inner: #BEB393;
+  --paper: #FFFFFF;
+  --paper-lines: #BBC1E1;
+  --paper-behind: #E1E6F9;
+  --pencil-cap: #fff;
+  --pencil-top: #275EFE;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5C86FF;
+  --shadow: rgba(13, 15, 25, .2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 53px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  background: var(--background-left);
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: .15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: .15s;
+  --pex: -24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

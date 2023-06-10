@@ -1,0 +1,57 @@
+.ortaalan{
+    width: 100%;
+    min-height: 300px;
+    background-color: rgba(81, 81, 206, 0.81);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family:'-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif;
+    margin-bottom: 10px;
+}
+.baslık{
+    color: white  ;
+}
+.imagegaleri{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
+.imagegaleri img {
+    
+    margin: 2px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.sayac{
+    width: 100%;
+    min-height: 200px;
+
+}
+.sayac-alan{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+   
+  
+}
+.sayac-sayı{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    font-size: 40px;
+    border-radius: 50%;
+}
+
+@media (max-width:1265px) {
+    .sayac-sayı{
+        font-size: 30px;
+    }
+}

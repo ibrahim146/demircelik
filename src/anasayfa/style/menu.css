@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+
+.gallery {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  grid-gap: 2rem;
+  padding: 0 2rem 2rem;
+  align-items: start;
+}
+.gallery > :nth-child(6n+1) {
+  grid-column: 1/-1;
+}
+.gallery > :nth-child(6n+2),
+.gallery > :nth-child(6n+3) {
+  grid-column: span 2;
+}
+.gallery > :nth-child(6n+4) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.gallery > :nth-child(6n+5),
+.gallery > :nth-child(6n+6) {
+  margin-top: 2rem;
+  margin-left: -4rem;
+}
+
+/* ---------------------------------- */
+.gallery-image{
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow: hidden;
+}
+.gallery-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0);
+}
+.gallery-image img{
+  display: inline-block;
+  width: 100%;
+  border-radius: 20px;
+}
+.gallery-image figcaption {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: blue;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: inherit;
+  transition-duration: 0.3s;
+  transform: translateY(100%);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.gallery-image[data-viewport-position="0"]:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------------------- */
+/* SCROLL ANIMATION */
+.gallery-image {
+  --duration: 1s;
+  --ease: cubic-bezier(0.7, 0, 0.3, 1);
+  opacity: 0;
+  transition: opacity var(--duration) linear;
+  border-radius: 10px;
+}
+.gallery-image::before {
+  transform: scaleX(0);
+  transform-origin: top left;
+  transform: scaleX(0);
+  transition: transform var(--duration) var(--ease);
+}
+.gallery-image img{
+  transition: -webkit-clip-path var(--duration) var(--ease);
+  transition: clip-path var(--duration) var(--ease);
+  transition: clip-path var(--duration) var(--ease), -webkit-clip-path var(--duration) var(--ease);
+  transition-delay: var(--duration);
+  -webkit-clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+          border-radius: 10px;
+}
+.gallery-image:nth-child(odd) {
+  transition-delay: 0.2s;
+}
+.gallery-image:nth-child(odd)::before {
+  transform-origin: top right;
+}
+.gallery-image:nth-child(odd) img {
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.gallery-image[data-viewport-position="0"] {
+  opacity: 1;
+}
+.gallery-image[data-viewport-position="0"]::before {
+  transform: scaleX(1);
+}
+.gallery-image[data-viewport-position="0"] img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}/*# sourceMappingURL=menu.css.map */

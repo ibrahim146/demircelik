@@ -8,6 +8,7 @@ import All from './All';
 import All2 from './All2';
 
 import { Route  } from 'react-router-dom';
+import Carusel from './carusell/Carusel';
 function  App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function  App() {
       
       <Routes>
       <Route exact path="/" element={<Cart />} />
-      <Route exact path="/çelikkonstrüksiyonveferforjegrubu" element={<All />} />                            
+      <Route exact path="/çelikkonstrüksiyonveferforjegrubu" element={<Carusel />} />                            
       <Route exact path="/ofismetalaksamları" element={<All2 />} />                            
      
       </Routes>  </div>
