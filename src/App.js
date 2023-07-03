@@ -17,8 +17,8 @@ function  App() {
       
       <Routes>
       <Route exact path="/" element={<Cart />} />
-      <Route exact path="/çelikkonstrüksiyonveferforjegrubu" element={<Carusel />} />                            
-      <Route exact path="/ofismetalaksamları" element={<All2 />} />                            
+      <Route exact path="/çelik-konstrüksiyon-ve-ferforje-grubu" element={<Carusel />} />                            
+      <Route exact path="/ofis-metal-aksamları-grubu" element={<All2 />} />                            
      
       </Routes>  </div>
     

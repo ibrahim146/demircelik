@@ -51,7 +51,7 @@ function Gallery() {
             <main ref={losBoxesRef} className="gallery">
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim9} alt='sdasdda' />
-                    <figcaption>giriş kapı cercevesi</figcaption>
+                    <figcaption><a href="#baslık">giriş kapı cercevesi</a></figcaption>
                 </figure>
 
                 <figure className="gallery-image">

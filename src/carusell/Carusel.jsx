@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import Anasayfa from '../anasayfa/Anasayfa';
 import { Orta } from '../Orta';
+import Alttaraf from '../Alttaraf';
+
 
 
 function Carusel() {
@@ -72,7 +74,7 @@ function Carusel() {
                     <div class="paper"></div>
                   </div>
                 </div>
-                incele
+                <a href="#baslık" >incele</a>
               </button>
             </div>
           </div>
@@ -95,7 +97,7 @@ function Carusel() {
                     <div class="paper"></div>
                   </div>
                 </div>
-                incele
+                <a href="#baslık" >incele</a>
               </button>
             </div>
           </div>
@@ -118,7 +120,7 @@ function Carusel() {
                     <div class="paper"></div>
                   </div>
                 </div>
-                incele
+                <a href="#baslık" >incele</a>
               </button>
             </div>
           </div>
@@ -136,6 +138,7 @@ function Carusel() {
 
       <Orta/>
       <Anasayfa/>
+      <Alttaraf />
     </>
   );
 }

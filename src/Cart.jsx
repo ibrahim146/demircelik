@@ -4,7 +4,7 @@ const Cart = () => {
   return (
     
 <div className='alan'>
-<Link to="/çelikkonstrüksiyonveferforjegrubu" class="card" data-aos="fade-right">
+<Link to="/çelik-konstrüksiyon-ve-ferforje-grubu" class="card" data-aos="fade-right">
   <div class="img-container">
     <div class="img">
       <img src="https://picsum.photos/id/111/600/600" alt="" />
@@ -17,7 +17,7 @@ const Cart = () => {
   </div>
 </Link>
 
-<Link to="/ofismetalaksamları" class="card" data-aos="fade-left">
+<Link to="/ofis-metal-aksamları-grubu" class="card" data-aos="fade-left">
   <div class="img-container">
     <div class="img">
       <img src="https://picsum.photos/id/115/600/600" alt="" />
