@@ -40,3 +40,14 @@
     height: 400px;
     
 }
+@media screen and (max-width:600px){
+    .altimage img {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .altimage img {
+        width: 390px;
+    }
+}
