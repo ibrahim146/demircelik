@@ -1,6 +1,6 @@
 import React from 'react'
 import "./alttaraf.css";
-import ortaimage from "../src/image/carusel.jpg"
+import ortaimage from "../src/image/resimm.jpeg"
 const Alttaraf1 = () => {
   return (
     <>
@@ -9,10 +9,10 @@ const Alttaraf1 = () => {
         data-aos-offset="500"
         data-aos-duration="500" style={{backgroundColor:"rgba(81, 81, 206, 0.81)", color:"white"}}>
         <div className='altroww'>
-          <div className='altbaslık' >
+          <div className='altbaslık'>
             <h1 id='celikgrubu' style={{padding:"10px"}}>celik</h1>
           </div>
-          <div className='altimage'>
+          <div className='altimage' style={{flexDirection:"row-reverse"}}>
             <img src={ortaimage} alt="" />
 
             <div className='imagedetail' >

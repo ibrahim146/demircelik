@@ -1,6 +1,6 @@
 import React from 'react'
 import "./alttaraf.css";
-import ortaimage from "../src/image/carusel.jpg"
+import ortaimage from "../src/image/resimmmm.jpeg"
 const Alttaraf2 = () => {
   return (
     <>

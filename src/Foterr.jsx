@@ -26,7 +26,7 @@ const Foterr = () => {
                     <a href="#">tems</a>
                 </li>
                 <li>
-                    <a href="#">hekp</a>
+                    <a href="#">help</a>
                 </li>
             </ul>
 

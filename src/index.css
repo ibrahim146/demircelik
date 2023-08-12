@@ -26,13 +26,13 @@ code {
   
 }
 .slide:nth-child(1){
-  background-image: url("./image/carusel1.jpg");
+  background-image: url("./image/yeni-carusel.jpeg");
 }
 .slide:nth-child(2){
   background-image: url("./image/carusel.jpg");
 }
 .slide:nth-child(3){
-  background-image: url("./image/resim2.jpg");
+  background-image: url("./image/resimm.jpeg");
 }
 .slide{
   width: 100%;
@@ -126,13 +126,13 @@ code {
 }
 @media (max-width:861px){
   .slide:nth-child(1){
-    background-image: url("./image/resim.jpg");
+    background-image: url("./image/güzel.jpeg");
   }
   .slide:nth-child(2){
-    background-image: url("./image/phone-image1.jpg");
+    background-image: url("./image/resimmmm.jpeg");
   }
   .slide:nth-child(3){
-    background-image: url("./image/resim1.jpg");
+    background-image: url("./image/phone-image1.jpg");
   }
 }
 

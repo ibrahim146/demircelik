@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import Anasayfa from '../anasayfa/Anasayfa';
 import { Orta } from '../Orta';
-import Alttaraf from '../Alttaraf';
 import Alttaraf1 from '../Alttaraf1';
+import Alttaraf from '../Alttaraf';
 import Foterr from '../Foterr';
 import Alttaraf2 from '../Alttaraf2';
 
@@ -60,9 +60,9 @@ function Carusel() {
       <div className='slides'>
         <div className={`slide ${activeIndex === 0 ? 'active' : ''}`}>
           <div className='slidecontainer'>
-            <div className='content'>
+            <div className='content' style={{color:"rgba(81, 81, 206, 0.81)"}}>
               <h1>demir grubu</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p style={{color:"rgba(81, 81, 206, 0.81)"}}>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -83,9 +83,9 @@ function Carusel() {
 
         <div className={`slide ${activeIndex === 1 ? 'active' : ''}`}>
           <div className='slidecontainer'>
-            <div className='content'>
+            <div className='content' style={{color:"rgba(81, 81, 206, 0.81)"}}>
               <h1>celik grubu</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p style={{color:"rgba(81, 81, 206, 0.81)"}}>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -106,9 +106,9 @@ function Carusel() {
 
         <div className={`slide ${activeIndex === 2 ? 'active' : ''}`}>
           <div className='slidecontainer'>
-            <div className='content'>
+            <div className='content' style={{color:"rgba(81, 81, 206, 0.81)"}}>
               <h1>celik celik</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p style={{color:"rgba(81, 81, 206, 0.81)"}}>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>

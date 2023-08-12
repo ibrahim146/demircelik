@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./alttaraf.css";
-import ortaimage from "../src/image/carusel.jpg"
+import AOS from 'aos';
+import ortaimage from "../src/image/resimem.jpeg"
 const Alttaraf = () => {
+  useEffect(() => {
+    AOS.init();
+  },[])
   return (
+
     <>
       <div className='altcontainer' data-aos="fade-right"
         data-aos-anchor="#example-anchor"
