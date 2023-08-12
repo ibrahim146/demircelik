@@ -1,27 +1,34 @@
+html {
+    scroll-behavior:  smooth;
+}
 .altcontainer{
     width: 100vw;
     height: 500px;
-   
+  
 }
+
 .altrow{
     width: 100%;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    flex-direction: column;
     align-content: center;
-
 }
-
-
+.altroww{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgba(81, 81, 206, 0.81);
+}
 .altbaslık{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
    
 }
-
- 
 .altimage{
     width: 100%;    
     height: 400px;
@@ -38,16 +45,27 @@
 .imagedetail{
     width: 400px;
     height: 400px;
+    text-align: center;
     
+}
+
+@media  screen and (max-width:1150px) {
+    .altcontainer{
+        width: 100vw;
+        height:760px;
+      
+    }
 }
 @media screen and (max-width:600px){
     .altimage img {
         width: 390px;
+        
     }
+  
 }
 
 @media screen and (max-width:400px){
     .altimage img {
-        width: 390px;
+        width: 360px;
     }
 }
