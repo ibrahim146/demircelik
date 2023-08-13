@@ -10,19 +10,17 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <Link to="/" className='logo'>
-         <img  data-aos="fade-right" src={resim} alt="" />
+         <img src={resim} alt="" />
         </Link>
 
         <div className={barsclass} >
           <ul >
 
-            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >anasayfa</Link></li>
-            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >ıletisim</Link></li>
-            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >hakkımızda</Link></li>
-            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >galerimiz</Link></li>
-            <li data-aos="fade-down" id='animation'><Link to="/" className='buttonn' >anasayfa</Link></li>
-            
-            
+            <li><Link to="/" className='buttonn' >anasayfa</Link></li>
+            <li><Link to="/" className='buttonn' >ıletisim</Link></li>
+            <li><Link to="/" className='buttonn' >hakkımızda</Link></li>
+            <li><Link to="/GALERİMİZ" className='buttonn' >galerimiz</Link></li>
+            <li><Link to="/" className='buttonn' >anasayfa</Link></li>
           </ul>
         </div>
         <div className='barss'  data-aos="fade-left">

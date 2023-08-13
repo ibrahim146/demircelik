@@ -6,9 +6,9 @@ import Cart from './Cart.jsx'
 import {  Routes } from 'react-router-dom';
 import All from './All';
 import All2 from './All2';
-
 import { Route  } from 'react-router-dom';
 import Carusel from './carusell/Carusel';
+import Galerimiz from './galerimiz/Galerimiz';
 function  App() {
   return (
     <div className="App">
@@ -19,6 +19,7 @@ function  App() {
       <Route exact path="/" element={<Cart />} />
       <Route exact path="/çelik-konstrüksiyon-ve-ferforje-grubu" element={<Carusel />} />                            
       <Route exact path="/ofis-metal-aksamları-grubu" element={<All2 />} />                            
+      <Route exact path="/GALERİMİZ" element={<Galerimiz />} />                            
      
       </Routes>  </div>
     

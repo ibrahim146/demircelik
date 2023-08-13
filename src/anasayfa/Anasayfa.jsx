@@ -51,7 +51,7 @@ function Gallery() {
             <main ref={losBoxesRef} className="gallery">
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim9} alt='sdasdda' />
-                    <figcaption><a href="#baslık">giriş kapı cercevesi</a></figcaption>
+                    <figcaption><a style={{ color: "white", listStyleType: "none", textDecoration: "none" }} href="#demirgrubu">giriş kapı cercevesi</a></figcaption>
                 </figure>
 
                 <figure className="gallery-image">
@@ -80,7 +80,7 @@ function Gallery() {
                     <img className='imagega' src={Resim7} alt='sdasdda' />
                     <figcaption>7</figcaption>
                 </figure>
-                <figure  className="gallery-image">
+                <figure className="gallery-image">
                     <img className='imagega' src={Resim8} alt='sdasdda' />
 
                     <figcaption>8</figcaption>
@@ -89,7 +89,7 @@ function Gallery() {
                     <img className='imagega' src={Resim1} alt='sdasdda' />
 
                     <figcaption>9</figcaption>
-                </figure> 
+                </figure>
 
             </main>
 
