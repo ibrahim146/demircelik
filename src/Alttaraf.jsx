@@ -16,9 +16,9 @@ const Alttaraf = () => {
             <h1  style={{ padding: "10px" }}>celik demir celik</h1>
           </div>
           <div className='altimage'>
-            <img  data-aos="fade-right" data-aos-duration="2000" src={ortaimage} alt="" />
+            <img style={{overflow:"hidden"}}  data-aos="fade-right"  data-aos-duration="2000" src={ortaimage} alt="" />
 
-            <div className='imagedetail' data-aos="fade-left" data-aos-duration="2000">
+            <div style={{overflow:"hidden"}} className='imagedetail' data-aos="fade-left" data-aos-duration="2000">
               sasdasd ipsum dolor sit amet consectetur adipisicing elit. Modi amet, tempora numquam magnam cumque provident, vero, quod excepturi quas qui minus perferendis consequatur earum repellendus reiciendis autem tempore non alias.
               sasdasd Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi amet, tempora numquam magnam cumque provident, vero, quod excepturi quas qui minus perferendis consequatur earum repellendus reiciendis autem tempore non alias.
 

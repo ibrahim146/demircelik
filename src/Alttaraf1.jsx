@@ -12,10 +12,10 @@ const Alttaraf1 = () => {
           <div className='altbaslık'>
             <h1 id='celikgrubu' style={{padding:"10px"}} >celik</h1>
           </div>
-          <div className='altimage' style={{flexDirection:"row-reverse"}}>
-            <img  data-aos="fade-left" data-aos-duration="2000" src={ortaimage} alt="" />
+          <div className='altimage'  style={{flexDirection:"row-reverse"}}>
+            <img style={{overflow:"hidden"}}  data-aos="fade-left"  src={ortaimage} alt="" data-aos-duration="2000" />
 
-            <div className='imagedetail' data-aos="fade-right" data-aos-duration="2000">
+            <div style={{overflow:"hidden"}} className='imagedetail' data-aos="fade-right" data-aos-duration="2000">
               sasdasd ipsum dolor sit amet consectetur adipisicing elit. Modi amet, tempora numquam magnam cumque provident, vero, quod excepturi quas qui minus perferendis consequatur earum repellendus reiciendis autem tempore non alias.
               sasdasd Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi amet, tempora numquam magnam cumque provident, vero, quod excepturi quas qui minus perferendis consequatur earum repellendus reiciendis autem tempore non alias.
             

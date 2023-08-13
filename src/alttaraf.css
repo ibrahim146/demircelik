@@ -4,7 +4,7 @@ html {
 .altcontainer{
     width: 100vw;
     height: 500px;
-  
+    overflow: hidden;
 }
 
 .altrow{

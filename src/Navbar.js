@@ -23,7 +23,7 @@ const Navbar = () => {
             <li><Link to="/" className='buttonn' >anasayfa</Link></li>
           </ul>
         </div>
-        <div className='barss'  data-aos="fade-left">
+        <div className='barss'  >
           <input type="checkbox" id="checkbox" />
           <label for="checkbox" class="toggle" onClick={() => {setbarsclass(barsclass === "menü" ? "close" : "menü")}}>
             <div class="bars" id="bar1"></div>
