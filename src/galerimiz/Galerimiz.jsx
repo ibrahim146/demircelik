@@ -1,5 +1,6 @@
 import React from 'react';
-import "./galerimiz.css"
+import "./galerimiz.css";
+import Galerimiz1 from '../Galerimiz1';
 import resim2 from "../resim/resim.jpg";
 import resim3 from "../resim/resim1.jpg";
 import resim4 from "../resim/resim4.jpg";
@@ -17,12 +18,18 @@ import resimm9 from "../resim/resim (15).jpg";
 import resimm12 from "../resim/resim (19).jpg";
 import resimm10 from "../resim/resim (17).jpg";
 import resimm11 from "../resim/resim (18).jpg";
+import Galeri_video from './galeri-video/Galeri_video';
+import Galeri_video_container from './galeri-video/Galeri_video_container';
+import Foterr from '../Foterr';
+
 
 
 const Galerimiz = () => {
   return (
+    <>
     <div className='wrapper-container'>
       <div className="wrapper-images">
+
         <div className="images-line">
           <div className="line" >
             <div className="img"><img width="100%" height="100%" src={resim1} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
@@ -150,6 +157,12 @@ const Galerimiz = () => {
         </div>
       </div>
     </div>
+        <Galerimiz1 />
+        <Galerimiz1 />
+        <Galeri_video />
+        <Foterr />
+        
+    </>
   );
 }
 export default Galerimiz;

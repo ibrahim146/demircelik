@@ -2,7 +2,7 @@ import React from 'react'
 import "./footer.css"
 const Foterr = () => {
     return (
-       <section className='footer'>
+       <section className='footer' style={{marginTop:"40px"}}>
             <div className='social'>
                 <a href="#"><i className='fa fa-instagram'></i></a>
                 <a href="#"><i className='fa fa-facebook'></i></a>

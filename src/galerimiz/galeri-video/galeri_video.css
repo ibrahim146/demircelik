@@ -1,0 +1,46 @@
+.video-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+
+.video_galeri{
+    width: 400px;
+    height:700px;
+    display: flex;
+    align-items: center;
+    
+}
+.video_galeri video {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+.video_galeri_container{
+    width: 100%;
+    height: 70%;
+   
+}
+.video_galeri_container video {
+    height:100%;
+    width: 100%;
+    
+}
+
+@media only screen and (max-width: 1199px)  {
+    .video_galeri{
+        margin-top: 40px;
+    }
+    .video_galeri video{
+        height:100%;
+    }
+}
+

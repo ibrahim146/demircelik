@@ -12,6 +12,7 @@ img {
 }
 
 .wrapper-container {
+    overflow: hidden;
     width: 100%;
     height: 120vh;
     box-sizing: border-box;
@@ -20,16 +21,17 @@ img {
 }
 
 .wrapper-images {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
     left: 50%;
-    position: absolute;
+    position: relative;
     top: 50%;
     opacity: 0.8;
     transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(10deg) rotateX(-10deg);
-    margin-top: 120px;
+    
 }
 
 .images-line {
