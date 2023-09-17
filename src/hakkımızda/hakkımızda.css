@@ -1,0 +1,78 @@
+.hakkımızda_container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.hakkımızda_image {
+    width: 800px;
+    height: 100vh;
+    background-color: red;
+    background-image: url("../resim/hakkımızda1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    object-fit:contain;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hakkımızda_text {
+    width: 700px;
+    height: 520px;
+    background-color: azure;
+    z-index: 6;
+    background-position-x: 10%;
+    position: relative;
+    right: 100px;
+    border-radius: 20px;
+    padding-top: 40px;
+    font-size: larger;
+    overflow: hidden;
+    border: solid rgba(81, 81, 206, 0.81) 2px ;
+    background-color: rgba(81, 81, 206, 0.982);
+}
+.hakkımızda_text p  {
+    margin: 20px;
+}
+.hakkımızda_text h1  {
+    margin: 20px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1500px){
+    
+       .hakkımızda_text{
+        margin-top: 30px;
+        margin: 0px;
+        right: 0px;
+        
+    }
+}
+@media only screen and (max-width: 1199px){
+    .hakkımızda_image{
+        background-position-x :-120px; ;
+       }
+    .hakkımızda_text{
+        margin-top: 30px;
+        margin: 0px;
+        right: 0px;
+    }
+    
+}
+@media only screen and (max-width: 807px){
+    .hakkımızda_image{
+        background-position-x :-250px;
+        
+       }
+        .hakkımızda_text{
+        margin-top: 30px;
+        margin: 0px;
+        right: 0px;
+       }
+}

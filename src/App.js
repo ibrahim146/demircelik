@@ -10,6 +10,8 @@ import { Route  } from 'react-router-dom';
 import Carusel from './carusell/Carusel';
 import Galerimiz from './galerimiz/Galerimiz';
 import Galerimiz1 from './Galerimiz1';
+import Hakkımızda from './hakkımızda/Hakkımızda';
+import İletişim from "./iletişim/İletişim";
 function  App() {
   return (
     <div className="App">
@@ -21,6 +23,8 @@ function  App() {
       <Route exact path="/çelik-konstrüksiyon-ve-ferforje-grubu" element={<Carusel />} />                            
       <Route exact path="/ofis-metal-aksamları-grubu" element={<All2 />} />                            
       <Route exact path="/GALERİMİZ" element={<Galerimiz />} />                            
+      <Route exact path="/hakkımızda" element={<Hakkımızda />} />                            
+      <Route exact path="/iletişim" element={<İletişim />} />                            
                                   
                                   
      

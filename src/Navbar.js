@@ -17,8 +17,8 @@ const Navbar = () => {
           <ul >
 
             <li><Link to="/" className='buttonn' >anasayfa</Link></li>
-            <li><Link to="/" className='buttonn' >ıletisim</Link></li>
-            <li><Link to="/" className='buttonn' >hakkımızda</Link></li>
+            <li><Link to="/iletişim" className='buttonn' >ıletisim</Link></li>
+            <li><Link to="/hakkımızda" className='buttonn' >hakkımızda</Link></li>
             <li><Link to="/GALERİMİZ" className='buttonn' >galerimiz</Link></li>
             <li><Link to="/" className='buttonn' >anasayfa</Link></li>
           </ul>

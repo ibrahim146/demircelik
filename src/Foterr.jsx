@@ -1,37 +1,38 @@
 import React from 'react'
-import "./footer.css"
+import "./footer.css";
+import { Link } from 'react-router-dom';
 const Foterr = () => {
     return (
-       <section className='footer' style={{marginTop:"40px"}}>
+        <section className='footer' style={{ marginTop: "40px" }}>
             <div className='social'>
-                <a href="#"><i className='fa fa-instagram'></i></a>
-                <a href="#"><i className='fa fa-facebook'></i></a>
-                <a href="#"><i className='fa fa-twitter'></i></a>
-                <a href="#"><i className='fa fa-snapchat'></i></a>
+                <a href="https://www.instagram.com/" target='_blank'><i className='fa fa-instagram'></i></a>
+                <a href="https://tr-tr.facebook.com/"  target='_blank'><i className='fa fa-facebook'></i></a>
+                <a href="https://twitter.com/?lang=tr" target='_blank'><i className='fa fa-twitter' target='_blank'></i></a>
+                <a href="https://www.snapchat.com/tr-TR" target='_blank'><i className='fa fa-snapchat' target='_blank'></i></a>
             </div>
 
             <ul className='list'>
                 <li>
-                    <a href="#">home</a>
+                    <Link to="/" >anasayfa</Link>
                 </li>
                 <li>
-                    <a href="#">services</a>
-                </li>
-
-                <li>
-                    <a href="#">about</a>
+                    <Link to="/iletişim" >ıletisim</Link>
                 </li>
 
                 <li>
-                    <a href="#">tems</a>
+                    <Link to="/hakkımızda" >hakkımızda</Link>
+                </li>
+
+                <li>
+                    <Link to="/GALERİMİZ" >galerimiz</Link>
                 </li>
                 <li>
-                    <a href="#">help</a>
+                    <Link to="/" >anasayfa</Link>
                 </li>
             </ul>
 
             <p className='copyright'>future coders @ 2023 - ibrahim akyel -</p>
-       </section >
+        </section >
     )
 }
 
