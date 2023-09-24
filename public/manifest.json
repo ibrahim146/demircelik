@@ -1,25 +1,25 @@
 {
-  "short_name": "YETİŞ METAL",
-  "name": "YETİŞ METAL",
+  "short_name": "yetiş metal",
+  "name": "yetiş metal",
   "icons": [
     {
       "src": "logo.png",
-      "sizes": "70x64 32x32 24x24 16x16",
+      "sizes": "90x904 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "200x200"
+      "sizes": "300x300"
     },
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "612x612"
+      "sizes": "712x712"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "white",
-  "background_color": "blue"
+  "background_color": "white"
 }
