@@ -13,28 +13,27 @@ code {
 }
 
 
-
-
-
-
-
-.slides{
+.slides {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
   width: 100%;
-  
+
 }
-.slide:nth-child(1){
-  background-image: url("./image/yeni-carusel.jpeg");
-}
-.slide:nth-child(2){
-  background-image: url("./image/carusel.jpg");
-}
-.slide:nth-child(3){
+
+.slide:nth-child(1) {
   background-image: url("./image/resimm.jpeg");
 }
-.slide{
+
+.slide:nth-child(2) {
+  background-image: url("./image/carusel.jpg");
+}
+
+.slide:nth-child(3) {
+  background-image: url("./image/yeni-carusel.jpeg");
+}
+
+.slide {
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -42,22 +41,26 @@ code {
   position: absolute;
   animation: sliding 2s ease;
   display: none;
+  background-position-y: 50%;
 }
-.slide.active{
+
+.slide.active {
   display: block;
 }
-@keyframes sliding{
-  from{
+
+@keyframes sliding {
+  from {
     opacity: 0;
     transform: scale(1.1);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.slidecontainer{
+.slidecontainer {
   width: 1140px;
   height: 100%;
   margin: auto;
@@ -66,82 +69,82 @@ code {
 
 }
 
-.slide .content{
+.slide .content {
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   color: rgb(32, 28, 28);
-  
-  
 }
+
 .slide .content h1 {
   font-size: 3rem;
   opacity: 0;
-  animation:  captionanimasyon 0.5s ease-in-out forwards;
+  animation: captionanimasyon 0.5s ease-in-out forwards;
   animation-delay: 0.6s;
-  
-  
 }
 
 .slide .content p {
   font-size: 18px;
   margin: 5px 0 30px;
-  color: rgb(36, 31, 31);
+  color: rgb(85, 85, 243);
   text-align: right;
   opacity: 0;
   animation: captionanimasyon 0.5s ease-in-out forwards;
   animation-delay: 0.8s;
   z-index: 1;
-  backdrop-filter: blur(10px);
- 
+  backdrop-filter: blur(15px);
 }
 
-.slide .content a{
-  background-color:rgb(85, 85, 243);
+.slide .content a {
+  background-color: rgb(85, 85, 243);
   padding: 7px 15px;
   text-decoration: none;
   color: aliceblue;
   opacity: 0;
   animation: captionanimasyon 0.5s ease-in-out forwards;
   animation-delay: 1s;
-  
 }
+
 @keyframes captionanimasyon {
-  from{
+  from {
     opacity: 0;
     transform: translateX(100px);
   }
 
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@media (max-width:1140px){
-  .slidecontainer{
+@media (max-width:1140px) {
+  .slidecontainer {
     width: 100%;
     padding: 0 15px;
   }
-  .slide{
+
+  .slide {
     background-position-x: 50%;
-    }
+  }
 }
-@media (max-width:861px){
-  .slide:nth-child(1){
+
+@media (max-width:861px) {
+  .slide:nth-child(1) {
     background-image: url("./image/güzel.jpeg");
   }
-  .slide:nth-child(2){
+
+  .slide:nth-child(2) {
     background-image: url("./image/resimmmm.jpeg");
   }
-  .slide:nth-child(3){
+
+  .slide:nth-child(3) {
     background-image: url("./image/phone-image1.jpg");
   }
 }
 
-.slides .control{
+.slides .control {
   width: 100%;
   margin: 50vh 0;
   position: absolute;
@@ -149,8 +152,9 @@ code {
   justify-content: space-between;
   padding: 0 15px;
 }
+
 .slides .next,
-.slides .prew{
+.slides .prew {
   cursor: pointer;
   background-color: rgb(96, 96, 238);
   width: 40px;
@@ -163,14 +167,12 @@ code {
   opacity: 0.5;
   transition: 0.5s;
   z-index: 222;
-
 }
 
 .slides .next:hover,
-.slides .prew:hover{
-    opacity: 1;
+.slides .prew:hover {
+  opacity: 1;
 }
-
 
 .continue-application {
   opacity: 0;
@@ -206,7 +208,7 @@ code {
   background: var(--bg, var(--background));
 }
 
-.continue-application > div {
+.continue-application>div {
   top: 0;
   left: 0;
   bottom: 0;
@@ -217,7 +219,7 @@ code {
   background: var(--background-left);
 }
 
-.continue-application > div .folder {
+.continue-application>div .folder {
   width: 23px;
   height: 27px;
   position: absolute;
@@ -225,7 +227,7 @@ code {
   top: 13px;
 }
 
-.continue-application > div .folder .top {
+.continue-application>div .folder .top {
   left: 0;
   top: 0;
   z-index: 2;
@@ -234,7 +236,7 @@ code {
   transition: transform 0.4s ease var(--fd, 0.3s);
 }
 
-.continue-application > div .folder .top svg {
+.continue-application>div .folder .top svg {
   width: 24px;
   height: 27px;
   display: block;
@@ -244,8 +246,9 @@ code {
   transform: perspective(120px) rotateY(var(--fr, 0deg));
 }
 
-.continue-application > div .folder:before, .continue-application > div .folder:after,
-.continue-application > div .folder .paper {
+.continue-application>div .folder:before,
+.continue-application>div .folder:after,
+.continue-application>div .folder .paper {
   content: "";
   position: absolute;
   left: var(--l, 0);
@@ -256,14 +259,14 @@ code {
   background: var(--b, var(--folder-inner));
 }
 
-.continue-application > div .folder:before {
+.continue-application>div .folder:before {
   box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
   transform: translateX(var(--fx, 0));
   transition: transform 0.4s ease var(--fd, 0.3s);
 }
 
-.continue-application > div .folder:after,
-.continue-application > div .folder .paper {
+.continue-application>div .folder:after,
+.continue-application>div .folder .paper {
   --l: 1px;
   --t: 1px;
   --w: 21px;
@@ -271,17 +274,18 @@ code {
   --b: var(--paper-behind);
 }
 
-.continue-application > div .folder:after {
+.continue-application>div .folder:after {
   transform: translate(var(--pbx, 0), var(--pby, 0));
   transition: transform 0.4s ease var(--pbd, 0s);
 }
 
-.continue-application > div .folder .paper {
+.continue-application>div .folder .paper {
   z-index: 1;
   --b: var(--paper);
 }
 
-.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+.continue-application>div .folder .paper:before,
+.continue-application>div .folder .paper:after {
   content: "";
   width: var(--wp, 14px);
   height: 2px;
@@ -294,12 +298,12 @@ code {
   box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
 }
 
-.continue-application > div .folder .paper:after {
+.continue-application>div .folder .paper:after {
   --tp: 6px;
   --wp: 10px;
 }
 
-.continue-application > div .pencil {
+.continue-application>div .pencil {
   height: 2px;
   width: 3px;
   border-radius: 1px 1px 0 0;
@@ -313,7 +317,8 @@ code {
   transition: transform 0.4s ease var(--pbd, 0s);
 }
 
-.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+.continue-application>div .pencil:before,
+.continue-application>div .pencil:after {
   content: "";
   position: absolute;
   display: block;
@@ -325,12 +330,12 @@ code {
   left: var(--l, -1px);
 }
 
-.continue-application > div .pencil:before {
+.continue-application>div .pencil:before {
   -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
   clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
 }
 
-.continue-application > div .pencil:after {
+.continue-application>div .pencil:after {
   --b: none;
   --w: 3px;
   --h: 6px;
@@ -341,7 +346,8 @@ code {
   border-right: 1px solid var(--pencil-top);
 }
 
-.continue-application:before, .continue-application:after {
+.continue-application:before,
+.continue-application:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -371,15 +377,3 @@ code {
   --pbd: .15s;
   --pex: -24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-

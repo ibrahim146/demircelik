@@ -23,7 +23,7 @@ function Sayac2() {
             let interval = setInterval(() => {
                 setSayi((prevSayi) => {
                     const yeniSayi = prevSayi + 1;
-                    if (yeniSayi === 100) {
+                    if (yeniSayi === 123) {
                         clearInterval(interval);
                     }
                     return yeniSayi;
@@ -39,11 +39,11 @@ function Sayac2() {
     }, []);
 
     return (
-        <div data-aos="fade-up" data-aos-duration="2000" className='sayac-sayı'>
-
-            <div>
-                <div>sayac 2</div>
-                <div>{sayi}+</div>
+        <div className='sayac-sayı'>
+            <div className='number'>{sayi}</div>
+            <div className='number_text'>
+                <i class="fa fa-user-o" aria-hidden="true" style={{ fontSize: "20px", color: "#90ff36" }}></i>
+                <div className='proje'>KURULUM</div>
             </div>
         </div>
     );

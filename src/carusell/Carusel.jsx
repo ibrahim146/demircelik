@@ -26,7 +26,7 @@ function Carusel() {
       index = 3;
 
     } else {
-      index--;  
+      index--;
       if (index == 0) {
         prewslide()
       }
@@ -52,7 +52,7 @@ function Carusel() {
 
   function changeslide() {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    
+
   }
 
   return (
@@ -60,9 +60,9 @@ function Carusel() {
       <div className='slides'>
         <div className={`slide ${activeIndex === 0 ? 'active' : ''}`}>
           <div className='slidecontainer'>
-            <div className='content' style={{color:"rgba(81, 81, 206, 0.81)"}}>
+            <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
               <h1>demir grubu</h1>
-              <p style={{color:"rgba(81, 81, 206, 0.81)"}}>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -83,9 +83,9 @@ function Carusel() {
 
         <div className={`slide ${activeIndex === 1 ? 'active' : ''}`}>
           <div className='slidecontainer'>
-            <div className='content' style={{color:"rgba(81, 81, 206, 0.81)"}}>
+            <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
               <h1>celik grubu</h1>
-              <p style={{color:"rgba(81, 81, 206, 0.81)"}}>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -106,9 +106,9 @@ function Carusel() {
 
         <div className={`slide ${activeIndex === 2 ? 'active' : ''}`}>
           <div className='slidecontainer'>
-            <div className='content' style={{color:"rgba(81, 81, 206, 0.81)"}}>
+            <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
               <h1>celik celik</h1>
-              <p style={{color:"rgba(81, 81, 206, 0.81)"}}>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p >lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -137,13 +137,13 @@ function Carusel() {
         </div>
       </div>
 
-      <Orta/>
+      <Orta />
       <Anasayfa />
       <Alttaraf />
       <Alttaraf1 />
       <Alttaraf2 />
       <Foterr />
-      
+
     </>
   );
 }

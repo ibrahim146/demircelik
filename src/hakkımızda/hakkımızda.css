@@ -6,20 +6,21 @@
     flex-wrap: wrap;
     justify-content: center;
     color: white;
+    overflow: hidden;
 }
 
 .hakkımızda_image {
     width: 800px;
-    height: 100vh;
-    background-color: red;
-    background-image: url("../resim/hakkımızda1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    object-fit:contain;
-    border-radius: 20px;
+    height: 600px;
     display: flex;
     justify-content: center;
+    background-color: red;
+    background-image: url("../video/hakkızda3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    border-radius: 20px;
 
 }
 
@@ -35,44 +36,56 @@
     padding-top: 40px;
     font-size: larger;
     overflow: hidden;
-    border: solid rgba(81, 81, 206, 0.81) 2px ;
+    border: solid rgba(81, 81, 206, 0.81) 2px;
     background-color: rgba(81, 81, 206, 0.982);
 }
-.hakkımızda_text p  {
+
+.hakkımızda_text p {
     margin: 20px;
 }
-.hakkımızda_text h1  {
+
+.hakkımızda_text h1 {
     margin: 20px;
     margin-top: 10px;
 }
-@media only screen and (max-width: 1500px){
-    
-       .hakkımızda_text{
+
+@media only screen and (max-width: 1500px) {
+
+    .hakkımızda_text {
         margin-top: 30px;
         margin: 0px;
         right: 0px;
-        
+
     }
 }
-@media only screen and (max-width: 1199px){
-    .hakkımızda_image{
-        background-position-x :-120px; ;
-       }
-    .hakkımızda_text{
+
+@media only screen and (max-width: 1199px) {
+    .hakkımızda_image {
+        background-position-x: -120px;
+        ;
+    }
+
+    .hakkımızda_text {
         margin-top: 30px;
         margin: 0px;
         right: 0px;
     }
-    
+
 }
-@media only screen and (max-width: 807px){
-    .hakkımızda_image{
-        background-position-x :-250px;
-        
-       }
-        .hakkımızda_text{
+
+@media only screen and (max-width: 807px) {
+
+    .hakkımızda_image {
+        background-position-x: 50%;
+        height: 250px;
+    }
+
+    .hakkımızda_text {
+        font-size: small;
         margin-top: 30px;
         margin: 0px;
         right: 0px;
-       }
+    }
+
+
 }

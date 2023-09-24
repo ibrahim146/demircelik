@@ -1,16 +1,19 @@
 .ortaalan{
     width: 100%;
-    min-height: 300px;
-    background-color: rgba(81, 81, 206, 0.81);
+    min-height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     font-family:'-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif;
     margin-bottom: 10px;
+    background-image: url("./resim/info-bg.png");
 }
 .baslık{
-    color: white  ;
+    width: 100%;
+    color: white;
 }
+
+
 .imagegaleri{
     display: flex;
     justify-content: center;
@@ -43,15 +46,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 150px;
+    width: 200px;
     height: 200px;
     font-size: 40px;
     border-radius: 50%;
+}
+
+.number_text i {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+.sayac-sayı .number{
+    font-size: 50px;
+}
+.sayac-sayı .proje{
+    color:#90ff36;
+    font-size: 15px;
+    
 }
 
 @media (max-width:1265px) {
     .sayac-sayı{
         font-size: 30px;
     }
+}
+@media (max-width:845px) {
+    .sayac-sayı{
+        width: 160px;
+        
+    }
+    .sayac-sayı .number{
+        font-size: 40px;
+    }
+    .sayac-sayı .proje{
+        color:#90ff36;
+        font-size: 12px;
+        
+    }
+    
 }

@@ -16,7 +16,7 @@ const Foterr = () => {
                     <Link to="/" >anasayfa</Link>
                 </li>
                 <li>
-                    <Link to="/iletişim" >ıletisim</Link>
+                    <Link to="/iletişim" >iletisim</Link>
                 </li>
 
                 <li>

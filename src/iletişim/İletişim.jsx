@@ -32,7 +32,7 @@ const İletişim = () => {
             </form>
           </div>
         </div>
-        <h1 style={{ display: "flex", justifyContent: "center", color: "rgba(81, 81, 206, 0.81)", marginBottom: "10px" }} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">İLETİŞİM BİLGİLERİ</h1>
+        <h1 style={{ display: "flex", justifyContent: "center", color: "rgba(81, 81, 206, 0.81)", marginBottom: "10px" }} data-aos="fade-up" data-aos-anchor-placement="top-bottom">İLETİŞİM BİLGİLERİ</h1>
         <div className='iletişim_text2'>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h1><i className='fa fa-map-marker' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i> adres</h1>
