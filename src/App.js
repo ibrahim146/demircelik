@@ -9,6 +9,7 @@ import Carusel from './carusell/Carusel';
 import Galerimiz from './galerimiz/Galerimiz';
 import Hakkımızda from './hakkımızda/Hakkımızda';
 import İletişim from "./iletişim/İletişim";
+import Projelerimiz from './projelerimiz/Projelerimiz';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/GALERİMİZ" element={<Galerimiz />} />
         <Route exact path="/hakkımızda" element={<Hakkımızda />} />
         <Route exact path="/iletişim" element={<İletişim />} />
+        <Route exact path="/projelerimiz" element={<Projelerimiz />} />
       </Routes>  </div>
 
   );

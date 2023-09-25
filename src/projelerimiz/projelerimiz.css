@@ -1,0 +1,102 @@
+.projeler_container{
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+   
+    
+}
+.projeler_başlık{
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+.proje_alan{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+.card_proje {
+    color: white;
+   
+    width: 300px;
+    height: 254px;
+    position: relative;
+   
+    border-radius: 8px;
+    line-height: 150%;
+    background: #ff930f;
+    background: linear-gradient(to top, #ff930f, #ffcc33);
+    transition: background-color 1s ease-in-out;
+    overflow: hidden;
+    background-image: url("../resim//resim.jpg");
+    background-size: cover;
+  }
+  .card_proje:nth-child(1){
+    background-image: url("../resim//resim1.jpg");
+   
+  }
+  .card_proje:nth-child(3) {
+    background-image: url("../resim/resim3.jpg");
+  }
+ 
+  
+  .card-front {
+    bottom: 16px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    
+  }
+  
+  .card-back {
+    transform: translateX(120%);
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  }
+  
+  
+  /*Text*/
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  /*Text divider*/
+  .title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    height: 2px;
+    margin: 2px auto;
+    background-color: #1b1b1b;
+  }
+  
+  
+  /*Hover*/
+  .card_proje:hover {
+    background-color: #1b1b1b25;
+  }
+  
+  .card_proje:hover .card-front {
+    transform: translateX(-100%);
+  }
+  
+  .card_proje:hover .card-back {
+    transform: translateX(0);
+  }
+  
+  
+  
