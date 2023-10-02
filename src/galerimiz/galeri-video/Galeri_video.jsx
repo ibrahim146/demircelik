@@ -45,7 +45,7 @@ const Galeri_video = () => {
                     ref={videoRef}
                     src={video2}
                     controls
-                    width="100%"
+                    width="80%"
                     height="auto"
                 ></video>
             </div>
