@@ -11,7 +11,7 @@ const Cart = () => {
     </div>
     <div class="description cardd">
       <span class="title">
-        Card
+      ÇELİK GRUBU
       </span>
     </div>
   </div>
@@ -24,7 +24,7 @@ const Cart = () => {
     </div>
     <div class="description cardd">
       <span  class="title">
-        Card
+        CARD GRUBU
       </span>
     </div>
   </div>

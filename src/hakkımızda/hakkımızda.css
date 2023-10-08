@@ -78,11 +78,15 @@
     .hakkımızda_image {
         background-position-x: 50%;
         height: 250px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .hakkımızda_text {
+        margin-top: 100px;
         font-size: small;
-        margin-top: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         margin: 0px;
         right: 0px;
     }

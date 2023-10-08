@@ -1,6 +1,5 @@
 import React from 'react';
 import "./hakkımızda.css";
-import hakkımızdaimage from "../resim/hakkımızda1.jpg"
 import Foterr from '../Foterr';
 const Hakkımızda = () => {
     return (

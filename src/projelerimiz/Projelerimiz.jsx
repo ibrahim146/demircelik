@@ -6,13 +6,13 @@ const Projelerimiz = () => {
     <>
       <div className='projeler_container'>
         <div className='projeler_başlık'>
-          <h1 style={{color:"rgba(81, 81, 206, 0.982)"}}>PROJELERİMİZ</h1>
+          <h1 style={{ color: "rgba(81, 81, 206, 0.982)" }}>PROJELERİMİZ</h1>
           <hr style={{ color: "green", width: "90%", margin: "13px" }} />
           <div className='proje_alan'>
-            
-            
-          <div class="card_proje">
-                <span className='imgg'></span>
+
+
+            <div class="card_proje" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -22,8 +22,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -33,8 +33,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -44,8 +44,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -55,8 +55,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -66,8 +66,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -77,8 +77,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>
@@ -88,8 +88,8 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje">
-                <span className='imgg'></span>
+            <div class="card_proje" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+              <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>
                 <p class="subtitle">Web Dev</p>

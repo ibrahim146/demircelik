@@ -168,7 +168,7 @@
         border-bottom-right-radius  : 0px;
         margin: 5px;
     }
-    .navbar .close ul {
+    .navbar .close  ul {
        display: none;
     }
     .alan .card {
@@ -303,7 +303,7 @@
   
   
   @media (max-width:820px) {
-    .navbar{
+    .navbar {
         position:sticky; top:0px; left:0px; right:0px;
     }
     .navbar .logo{
@@ -331,6 +331,9 @@
         border-bottom-right-radius  : 0px;
         margin: 5px;
     }
+    .navbar .close{
+      display: none;
+   }
     .navbar .close ul {
        display: none;
     }
@@ -414,7 +417,6 @@
     
       
   }
-  /* From uiverse.io by @FrM-bot */
   
   .card {
     width: 600px;
