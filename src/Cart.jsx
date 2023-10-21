@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Cart = () => {
+const   Cart = () => {
   return (
     
 <div className='alan'>
@@ -10,7 +10,7 @@ const Cart = () => {
       <img src="https://picsum.photos/id/111/600/600" alt="" />
     </div>
     <div class="description cardd">
-      <span class="title">
+      <span class="titlee">
       ÇELİK GRUBU
       </span>
     </div>
@@ -23,7 +23,7 @@ const Cart = () => {
       <img src="https://picsum.photos/id/115/600/600" alt="" />
     </div>
     <div class="description cardd">
-      <span  class="title">
+      <span  class="titlee">
         CARD GRUBU
       </span>
     </div>

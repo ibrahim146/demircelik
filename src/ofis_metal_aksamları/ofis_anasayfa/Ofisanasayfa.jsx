@@ -1,14 +1,15 @@
-import './style/menu.css'
+import "../../anasayfa/style/menu.css"
 import { useEffect, useRef } from "react";
-import Resim1 from './demirimage/resim1.jpg';
-import Resim2 from './demirimage/resim2.jpg';
-import Resim3 from './demirimage/resim3.jpg';
-import Resim4 from './demirimage/resim4.jpg';
-import Resim5 from './demirimage/resim5.jpg';
-import Resim6 from './demirimage/resim6.jpg';
-import Resim7 from './demirimage/resim7.jpg';
-import Resim8 from './demirimage/resim8.jpg';
-import Resim9 from './demirimage/resim9.jpg';
+import Resim1 from "../../anasayfa/demirimage/resim1.jpg";
+import Resim2 from "../../anasayfa/demirimage/resim2.jpg";
+import Resim3 from "../../anasayfa/demirimage/resim3.jpg";
+import Resim4 from "../../anasayfa/demirimage/resim4.jpg";
+import Resim5 from "../../anasayfa/demirimage/resim5.jpg";
+import Resim6 from "../../anasayfa/demirimage/resim6.jpg";
+import Resim7 from "../../anasayfa/demirimage/resim7.jpg";
+import Resim8 from "../../anasayfa/demirimage/resim8.jpg";
+import Resim9 from "../../anasayfa/demirimage/resim9.jpg";
+
 
 function Gallery() {
     const losBoxesRef = useRef(null);

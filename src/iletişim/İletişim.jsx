@@ -1,7 +1,20 @@
-import React from 'react';
+import {useRef} from 'react';
 import "./iletişim.css";
 import Foterr from "../Foterr";
+import emailjs from '@emailjs/browser';
 const İletişim = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_bnosn15', 'template_g3imksm', form.current, 'hh3QW5zfK3CmRnbLQ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  } 
   return (
     <>
       <div className='iletişim_container'>
@@ -11,21 +24,21 @@ const İletişim = () => {
         <div className='iletişim_text'>
           <div class="carddd" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <span class="titlee">BİZE ULAŞIN</span>
-            <form class="form">
+            <form ref={form} onSubmit={sendEmail} class="form">
               <div class="group">
-                <input placeholder='' type="text" required="" />
+                <input placeholder='' type="text" required="zorunlu alan" name='user_name'/>
                 <label for="name">İSİM</label>
               </div>
               <div class="group">
-                <input placeholder='' type="text" required="" />
+                <input placeholder='' type="text" required="zorunlu alan" name='user_surname'/>
                 <label for="name">SOY İSİM</label>
               </div>
               <div class="group">
-                <input placeholder="" type="email" id="email" name="email" required="" />
+                <input placeholder="" type="email" id="email" name="user_email" required="zorunlu alan" />
                 <label for="">EMAİL</label>
               </div>
               <div class="group">
-                <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+                <textarea placeholder="" id="comment" name="message" rows="5" required="zorunlu alan"></textarea>
                 <label for="comment">MESAJINIZ...</label>
               </div>
               <button type="submit">GÖNDER</button>

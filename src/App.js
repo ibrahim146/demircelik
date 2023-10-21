@@ -3,7 +3,7 @@ import './style.css';
 import Navbar from './Navbar';
 import Cart from './Cart.jsx'
 import { Routes } from 'react-router-dom';
-import All2 from './All2';
+import All2 from './ofis_metal_aksamları/All2';
 import { Route } from 'react-router-dom';
 import Carusel from './carusell/Carusel';
 import Galerimiz from './galerimiz/Galerimiz';
