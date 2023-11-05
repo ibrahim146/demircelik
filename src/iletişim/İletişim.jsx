@@ -54,7 +54,7 @@ const İletişim = () => {
           </div>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
             <h1><i className='fa fa-phone' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i>  telefon</h1>
-            <a href="tel:+095448565454" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 0544 229 93 69</a>
+            <a href="tel:+095442299369" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 0544 229 93 69</a>
           </div>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <h1><i className='fa fa-envelope' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i> E-mail</h1>
