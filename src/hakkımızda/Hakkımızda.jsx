@@ -10,12 +10,9 @@ const Hakkımızda = () => {
                 </div>
                 <div className='hakkımızda_text' data-aos="fade-left" data-aos-duration="1000">
                     <h1>hakkımızda</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit rerum, doloremque vitae repellendus incidunt eligendi! Id debitis eaque repudiandae possimus quo, iure voluptatibus beatae adipisci delectus nobis, voluptatem tenetur.
-                        Iusto hic dicta excepturi sunt velit earum ex nobis aliquid quo dolorem accusantium doloribus aliquam aperiam molestiae totam nihil eligendi assumenda tempora, cupiditate, modi dolor nulla pariatur recusandae debitis? Maxime.
-                        Sequi laborusquam illum consequuntur tempore nobis officia quidem dignissimos
+                    <p>"Şirketimiz, istanbul avrupa bölgesinde faaliyet gösteren köklü bir işletmedir. uzun yıllardan beri "YETİŞ METAL" adı altında müşterilerimize en kaliteli "ÇELİK KOSTRÜKSİYON VE OFİS MOBİLYA METAL AKSAMLARI" sunma misyonuyla çalışmaktayız. Deneyimli ve uzman ekibimiz
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit rerum, doloremque vitae repellendus incidunt eligendi! Id debitis eaque repudiandae possimus quo, iure voluptatibus beatae adipisci delectus nobis, voluptatem tenetur.
-                        Iusto hic dicta excepturi sunt velit earum ex nobis aliquid quo dolorem accusantium doloribus aliquam aperiam molestiae totam nihil
+                    <p>hedeflerimiz doğrultusunda çalışarak müşterilerimize en iyi çözümleri sunar. Müşteri memnuniyeti bizim için öncelikli bir öneme sahiptir ve "YETİŞ METAL" olarak her zaman kalite, güvenilirlik ve uzmanlık standartlarına bağlı kalırız. 
                     </p>
                 </div>
             </div>

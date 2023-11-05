@@ -11,16 +11,15 @@ const Alttaraf = () => {
     <>
       <div className='altcontainer' >
 
-        <div className='altrow' id='demirgrubu'>
+        <div className='altrow' id='celikgrubu'>
           <div className='altbaslık' >
-            <h1  style={{ padding: "10px" }}>celik demir celik</h1>
+            <h1  style={{ padding: "10px" }}>ÇATI GRUBU</h1>
           </div>
           <div className='altimage'>
             <img style={{overflow:"hidden"}}  data-aos="fade-right"  data-aos-duration="2000" src={ortaimage} alt="" />
 
             <div style={{overflow:"hidden"}} className='imagedetail' data-aos="fade-left" data-aos-duration="2000">
-              sasdasd ipsum dolor sit amet consectetur adipisicing elit. Modi amet, tempora numquam magnam cumque provident, vero, quod excepturi quas qui minus perferendis consequatur earum repellendus reiciendis autem tempore non alias.
-              sasdasd Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi amet, tempora numquam magnam cumque provident, vero, quod excepturi quas qui minus perferendis consequatur earum repellendus reiciendis autem tempore non alias.
+            demir malzemelerin kullanıldığı çatı işleri ve konstrüksiyon işlerine odaklanan bir projeyi ifade eder.şirketimiz  demir profilleri, çubukları ve plakaları kullanarak çatıların inşası ve onarımı gibi hizmetler sunar. Demir çatılar genellikle dayanıklılık ve mukavemet için tercih edilir. İlgili bir demir çatı grubu hakkında daha fazla bilgi edinmek için bizimle iletişime geçebilirsiniz
 
             </div>
           </div>

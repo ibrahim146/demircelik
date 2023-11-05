@@ -1,6 +1,6 @@
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import resim from "./resim/resim (11).jpg";
 import resim1 from "./resim/resim (13).jpg";
 import resim2 from "./resim/resim (9).jpg";
@@ -15,7 +15,7 @@ import './galeri.css';
 export default function Galerimiz1() {
   return (
     <>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>galeri image</h1>
+      <h1 style={{ display: "flex", justifyContent: "center" }}>ÜRÜNLERİMİZ</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

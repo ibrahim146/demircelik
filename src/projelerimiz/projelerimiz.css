@@ -32,11 +32,11 @@
     background: linear-gradient(to top, #ff930f, #ffcc33);
     transition: background-color 1s ease-in-out;
     overflow: hidden;
-    background-image: url("../resim//resim.jpg");
+    
     background-size: cover;
   }
   .card_proje:nth-child(1){
-    background-image: url("../resim//resim1.jpg");
+    background-image: url("../resim/yeni-carusel.jpeg");
    
   }
   .card_proje:nth-child(3) {

@@ -11,7 +11,8 @@ const   Cart = () => {
     </div>
     <div class="description cardd">
       <span class="titlee">
-      ÇELİK GRUBU
+      ÇELİK KONSTRÜKSİYON GRUBU
+      
       </span>
     </div>
   </div>
@@ -24,7 +25,7 @@ const   Cart = () => {
     </div>
     <div class="description cardd">
       <span  class="titlee">
-        CARD GRUBU
+        OFİS GRUBU
       </span>
     </div>
   </div>

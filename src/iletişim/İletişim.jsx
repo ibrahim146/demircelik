@@ -7,7 +7,7 @@ const İletişim = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_bnosn15', 'template_g3imksm', form.current, 'hh3QW5zfK3CmRnbLQ')
+    emailjs.sendForm('service_allypcw', 'template_9i36ub5', form.current, 'aTGXNX5UuWlL1wWGr')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -19,7 +19,8 @@ const İletişim = () => {
     <>
       <div className='iletişim_container'>
         <div className='iletişim_location'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385396.3210880756!2d28.68252841066151!3d41.00537021148323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1695068366446!5m2!1str!2str" width="100%" height="450" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192679.2840248239!2d28.826051942934704!3d41.011825171829344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4dd28c889df%3A0xcb31bc1a4d01732e!2sYeti%C5%9F%20Metal!5e0!3m2!1str!2str!4v1699201619900!5m2!1str!2str" width="100%" height="450" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className='iletişim_text'>
           <div class="carddd" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -49,15 +50,15 @@ const İletişim = () => {
         <div className='iletişim_text2'>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h1><i className='fa fa-map-marker' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i> adres</h1>
-            <a target='_blank' href='https://www.google.com.tr/maps/place/Ba%C4%9Fc%C4%B1lar%2F%C4%B0stanbul/@41.0449244,28.7991289,13z/data=!3m1!4b1!4m6!3m5!1s0x14caa53c38a5db77:0xe1b6d8f8973f9ff0!8m2!3d41.0456474!4d28.824722!16zL20vMDV5cWcw?hl=tr&entry=ttu' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">  bagcılar mah 2566 sokak no:5 bağcılar / istanbul</a>
+            <a target='_blank' href='https://www.google.com.tr/maps/place/Yeti%C5%9F+Metal/@41.0237183,28.8363915,17z/data=!3m1!4b1!4m6!3m5!1s0x14caa4dd28c889df:0xcb31bc1a4d01732e!8m2!3d41.0237143!4d28.8389664!16s%2Fg%2F11g7_d2nkb?hl=tr&entry=ttu' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Barbaros, 203. Sk. 24 A, 34203 Bağcılar/İstanbul</a>
           </div>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
             <h1><i className='fa fa-phone' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i>  telefon</h1>
-            <a href="tel:+095448565454" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 0555 555 55 55</a>
+            <a href="tel:+095448565454" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 0544 229 93 69</a>
           </div>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <h1><i className='fa fa-envelope' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i> E-mail</h1>
-            <a href="mailto:" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">  sadıkyetiş@gmail.com</a>
+            <a href="mailto:" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> sadikyetis194@gmail.com</a>
           </div>
           <div className='iletişim_bilgileri' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
             <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">sosyal medya</h1>

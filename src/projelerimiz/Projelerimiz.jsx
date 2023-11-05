@@ -11,14 +11,16 @@ const Projelerimiz = () => {
           <div className='proje_alan'>
 
 
-            <div class="card_proje" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+            
+
+            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
               <span className='imgg'></span>
               <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
+                <p class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p class="subtitle">projesi-2022</p>
               </div>
               <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>avrupa yakası yavuz sultan selim köprüsü , kuzey marmara oto yolu üzeri 16'cı ve 17'ci viyadükler üzeri ses perdesi calışmamız   </p>
               </div>
             </div>
 
@@ -33,7 +35,7 @@ const Projelerimiz = () => {
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+            <div class="card_proje" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
               <span className='imgg'></span>
               <div class="card-front">
                 <p class="title">karayolu projesi</p>

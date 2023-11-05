@@ -11,7 +11,7 @@ function Carusel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 6000);
+    }, 12000);
 
     return () => {
       clearInterval(interval);
@@ -61,8 +61,8 @@ function Carusel() {
         <div className={`slide ${activeIndex === 0 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>demir grubu</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <h1>çelik grubu</h1>
+              <p>Çelik konstrüksiyon, yapıların inşası için çelik malzemenin kullanıldığı bir inşaat yöntemidir. Bu yöntem, çelik profiller, çubuklar ve plakalar gibi çelik malzemelerin kullanılmasını içerir. Çelik konstrüksiyon, yapıların dayanıklılığını, hafifliğini ve mukavemetini artırma amacıyla tercih edilir. Ayrıca, çelik yapılar hızlı bir şekilde inşa edilebilir,  </p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -84,8 +84,8 @@ function Carusel() {
         <div className={`slide ${activeIndex === 1 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>celik grubu</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <h1>çatı grubu</h1>
+              <p>Çatı işleri, binaların çatılarının inşası, bakımı ve onarımını içeren. Bu işler, su yalıtımı, çatı kaplama malzemelerinin seçimi, çatı izolasyonu, çatı onarımları ve yenilemeleri gibi çeşitli hizmetleri sunar.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -107,8 +107,8 @@ function Carusel() {
         <div className={`slide ${activeIndex === 2 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>celik celik</h1>
-              <p >lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <h1>atölyemiz</h1>
+              <p>15 yıllık bir çelik konstrüksiyon atölyemiz uzun yıllardır bu sektörde deneyim kazanmış ve müşterilerimize kaliteli hizmet sunmuş bir işletmeyiz. Atölyemizde çelik malzemelerin tasarımı, kesimi, işlenmesi ve montajı gibi süreçlerde uzmanlaşmıştır.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -142,6 +142,7 @@ function Carusel() {
       <Alttaraf />
       <Alttaraf1 />
       <Alttaraf2 />
+
       <Foterr />
 
     </>
