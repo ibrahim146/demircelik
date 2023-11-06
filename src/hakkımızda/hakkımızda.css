@@ -9,35 +9,41 @@
     overflow: hidden;
 }
 
+
 .hakkımızda_image {
-    width: 800px;
+    width: 51%;
     height: 600px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: red;
-    background-image: url("../video/hakkızda3.gif");
+    border-radius: 20px;
+
+}
+.hakkımızda_image video{
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 20px;
-
 }
 
 .hakkımızda_text {
     width: 700px;
-    height: 520px;
+    height: 460px;
     background-color: azure;
     z-index: 6;
     background-position-x: 10%;
     position: relative;
     right: 100px;
     border-radius: 20px;
-    padding-top: 40px;
+    padding-top: 50px;
     font-size: larger;
     overflow: hidden;
     border: solid rgba(81, 81, 206, 0.81) 2px;
-    background-color: rgba(81, 81, 206, 0.982);
+    background-color: rgba(81, 81, 206, 0.826);
 }
 
 .hakkımızda_text p {
@@ -56,6 +62,11 @@
         margin: 0px;
         right: 0px;
 
+    }
+    .hakkımızda_image{
+        width: 100%;
+        height: auto;
+        
     }
 }
 
@@ -77,9 +88,13 @@
 
     .hakkımızda_image {
         background-position-x: 50%;
-        height: 250px;
+        
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+    }
+    .hakkımızda_image{
+        width: 100%;
+        height: 100%;
     }
 
     .hakkımızda_text {

@@ -8,6 +8,9 @@
     margin-top: 40px;
 
 }
+.galeri__video{
+    width: 80%;
+}
 .video_galeri {
     width: 400px;
     height: 700px;
@@ -39,5 +42,8 @@
 
     .video_galeri video {
         height: 100%;
+    }
+    .galeri__video{
+        width: 100%;
     }
 }

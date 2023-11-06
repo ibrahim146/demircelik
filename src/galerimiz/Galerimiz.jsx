@@ -19,149 +19,144 @@ import resimm12 from "../resim/resim (19).jpg";
 import resimm10 from "../resim/resim (17).jpg";
 import resimm11 from "../resim/resim (18).jpg";
 import Galeri_video from './galeri-video/Galeri_video';
-import Galeri_video_container from './galeri-video/Galeri_video_container';
 import Foterr from '../Foterr';
-
-
 
 const Galerimiz = () => {
   return (
     <>
-    <div className='wrapper-container'>
-      <div className="wrapper-images">
+      <div className='wrapper-container'>
+        <div className="wrapper-images">
 
-        <div className="images-line">
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resim1} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line">
-          <div className="img"><img width="100%" height="100%" src={resim2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+          <div className="images-line">
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm1} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resim2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img"><img width="100%" height="100%" src={resim3} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img"><img width="100%" height="100%" src={resim3} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          <div className="line" >
-          <div className="img"><img width="100%" height="100%" src={resim4} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line" >
-            <div className="img" ><img width="100%" height="100%" src={resim5} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line" >
-            <div className="img" ><img width="100%" height="100%" src={resimm12} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line">
-          <div className="img" ><img width="100%" height="100%" src={resimm2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resim4} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line" >
+              <div className="img" ><img width="100%" height="100%" src={resim5} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line" >
+              <div className="img" ><img width="100%" height="100%" src={resimm12} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img" ><img width="100%" height="100%" src={resimm2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img" ><img width="100%" height="100%" src={resimm3} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img" ><img width="100%" height="100%" src={resimm3} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
           </div>
-        </div>
-        <div className="images-line">
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resimm4} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+          <div className="images-line">
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm4} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          </div>
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resimm5} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm5} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          </div>
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resimm6} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm6} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          </div>
-          <div className="line">
-          <div className="img"><img width="100%" height="100%" src={resimm7} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm7} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img"><img width="100%" height="100%" src={resimm8} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img"><img width="100%" height="100%" src={resimm8} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          <div className="line" >
-          <div className="img"><img width="100%" height="100%" src={resimm9} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line">
-          <div className="img"><img width="100%" height="100%" src={resimm10} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm9} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm10} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img"><img width="100%" height="100%" src={resimm11} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-        </div>
-
-        <div className="images-line">
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resimm12} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-
-          </div>
-          <div className="line">
-          <div className="img"><img width="100%" height="100%" src={resimm3} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img"><img width="100%" height="100%" src={resimm11} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
           </div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img"><img width="100%" height="100%" src={resimm6} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+          <div className="images-line">
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm12} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          <div className="line" >
-            <div className="img" ><img width="100%" height="100%" src={resim1} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line">
-            <div className="img" ><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal" alt="" /></div>
-          </div>
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resim2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm3} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-          </div>
-          <div className="line" >
-            <div className="img"><img width="100%" height="100%" src={resim2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          
-        </div>
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img"><img width="100%" height="100%" src={resimm6} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
-        
+            <div className="line" >
+              <div className="img" ><img width="100%" height="100%" src={resim1} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img" ><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal" alt="" /></div>
+            </div>
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resim2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-        <div className="images-line" id='mobile'>
-          <div className="line" id='mobile' >
-            <div className="img"><img width="100%" height="100%" src={resimm4} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-
-          </div>
-          <div className="line">
-            <div className="img"><img width="100%" height="100%" src={resimm5} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resim2} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
 
           </div>
-          <div className="line">
-            <div className="img"><img width="100%" height="100%" src={resimm6} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          </div>
-          <div className="line">
-          <div className="img"><img width="100%" height="100%" src={resimm7} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+          <div className="images-line" id='mobile'>
+            <div className="line" id='mobile' >
+              <div className="img"><img width="100%" height="100%" src={resimm4} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img"><img width="100%" height="100%" src={resimm8} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm5} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          <div className="line" >
-          <div className="img"><img width="100%" height="100%" src={resimm9} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
-          <div className="line">
-          <div className="img"><img width="100%" height="100%" src={resimm10} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
-          </div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm6} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
 
-          <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
-          <div className="img"><img width="100%" height="100%" src={resimm11} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm7} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img"><img width="100%" height="100%" src={resimm8} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+
+            <div className="line" >
+              <div className="img"><img width="100%" height="100%" src={resimm9} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+            <div className="line">
+              <div className="img"><img width="100%" height="100%" src={resimm10} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
+
+            <div className="line" style={{ backgroundImage: "url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)" }}>
+              <div className="img"><img width="100%" height="100%" src={resimm11} alt="" style={{ backgroundRepeat: "no-repeat", objectFit: "cover" }} /></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-        <Galerimiz1 />
-        <Galerimiz1 />
-        <Galeri_video />
-        <Foterr />
-        
+      <Galerimiz1 />
+      <Galerimiz1 />
+      <Galeri_video />
+      <Foterr />
+
     </>
   );
 }

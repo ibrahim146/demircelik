@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./projelerimiz.css";
 import Footer from '../Foterr';
+import resim from "../resim/resim (13).jpg";
+import resim1 from "../resim/resim (9).jpg";
+import resim2 from "../resim/resim (9).jpg";
+
 const Projelerimiz = () => {
+  const [open , setopen] = useState("projec_closed");
+  function closed() {
+    setopen("projec_closed")
+  };
+  function opened() {
+    setopen("open")
+  }
   return (
     <>
       <div className='projeler_container'>
@@ -11,99 +22,98 @@ const Projelerimiz = () => {
           <div className='proje_alan'>
 
 
-            
 
-            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">İÇTAŞ YSS KARAYOLU </p>
-                <p class="subtitle">projesi-2022</p>
-              </div>
-              <div class="card-back">
-                <p>avrupa yakası yavuz sultan selim köprüsü , kuzey marmara oto yolu üzeri 16'cı ve 17'ci viyadükler üzeri ses perdesi calışmamız   </p>
+
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
 
-            <div class="card_proje" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-              <span className='imgg'></span>
-              <div class="card-front">
-                <p class="title">karayolu projesi</p>
-                <p class="subtitle">Web Dev</p>
-              </div>
-              <div class="card-back">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div style={{cursor:"pointer"}} onClick={() => {opened()}} class="card_proje" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <span onClick={() => {opened()}} className='imgg'></span>
+              <div onClick={() => {opened()}}  class="card-front">
+                <p onClick={() => {opened()}} class="title">İÇTAŞ YSS KARAYOLU </p>
+                <p onClick={() => {opened()}} class="subtitle">projesi-2022</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+
+      <div  className={`projec_container ${open}`} >
+        <span className='x' onClick={() =>{closed()}} style={{cursor:"pointer" , zIndex:"660"}}>X</span>
+        <div  className='projec_detail_container'>
+          <div className='projec_image'>
+            <div className='image__'>
+            <img  src={resim1} alt="" />
+            <img  src={resim1} alt="" />
+            <img  src={resim2} alt="" />
+            </div>
+          </div>
+          <div className='projec_detail'>
+            <div className='new_detail'>
+            <h1>karayolu projesi</h1><hr />
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+              recusandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, corporis omnis. 
+              Magnam, quia quis tempora ducimus doloribus ipsa veritatis vel!</p><hr />
+              </div>
+          </div>
+        </div>
+        </div>
+
+
       <Footer />
     </>
   )
