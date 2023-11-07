@@ -5,7 +5,40 @@
   box-sizing: border-box;
   overflow:visible;
 }
-
+.ulasım{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  z-index: 66544;
+  right: 0px;
+  bottom: 20px;
+  
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ulasım .ulasım_instagram{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 35px;
+  background-color: #E1306C;
+  color: white;
+}
+.ulasım .ulasım_whatsapp
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 35px;
+  background-color: #25D366;
+  color: #fff;
+}
 
 
 

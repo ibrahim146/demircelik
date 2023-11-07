@@ -28,7 +28,7 @@ img {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(10deg) rotateX(-10deg);
+    transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(0deg) rotateX(0deg);
     
 }
 

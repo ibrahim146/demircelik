@@ -8,52 +8,41 @@ import Alttaraf2 from '../Alttaraf2';
 
 function Carusel() {
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  let intervalId; 
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 12000);
+    startTimer(); 
 
     return () => {
-      clearInterval(interval);
+      clearInterval(intervalId); 
     };
-  }, []);
-  const [activeIndex, setActiveIndex] = useState(0);
+  }, [activeIndex]);
 
-  let index = 3;
+  // Zamanlayıcıyı başlatan işlev
+  function startTimer() {
+    clearInterval(intervalId); 
+    intervalId = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 12000);
+  }
+    
+  // prewslide işlevini güncelle
   function prewslide() {
-
-    if (index === 0) {
-      index = 3;
-
+    if (activeIndex === 0) {
+      setActiveIndex(2); 
     } else {
-      index--;
-      if (index == 0) {
-        prewslide()
-      }
+      setActiveIndex((prevIndex) => prevIndex - 1);
     }
-    changeslide()
+    startTimer(); 
   }
 
-  // next slider *********************
+  // nextslide işlevini güncelle
   function netxslide() {
-
-    if (index === 4) {
-      index = 1;
-    } else {
-      index++;
-      if (index === 4) {
-        index = 0;
-        netxslide();
-      }
-
-    }
-    changeslide()
-  }
-
-  function changeslide() {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-
+    startTimer(); 
   }
+
 
   return (
     <>

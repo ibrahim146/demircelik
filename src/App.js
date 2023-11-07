@@ -13,6 +13,14 @@ import Projelerimiz from './projelerimiz/Projelerimiz';
 function App() {
   return (
     <div className="App">
+      <div className='ulasım'>
+        <a data-aos="fade-left" href="https://www.instagram.com/yetis_metal/?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target='_blank' className='ulasım_instagram'>
+          <i className='fa fa-instagram'></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=905377489197" target='_blank' data-aos="fade-left" className='ulasım_whatsapp'>
+          <i className='fa fa-whatsapp'></i>
+        </a>
+      </div>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Cart />} />

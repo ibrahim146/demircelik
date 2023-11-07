@@ -1,198 +1,240 @@
 /*          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385396.3210880756!2d28.68252841066151!3d41.00537021148323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1695068366446!5m2!1str!2str" width="100%" height="450" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 */
-.projeler_container{
-    width: 100vw;
-    height: 100%;
-    box-sizing: border-box;
-    padding-left: 70px;
-    overflow: hidden;
+.projeler_container {
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 70px;
+  overflow: hidden;
 }
-.projeler_başlık{
-    text-align: center;
-    align-items: center;
-    margin: 20px;
+
+.projeler_başlık {
+  text-align: center;
+  align-items: center;
+  margin: 20px;
 }
-.proje_alan{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
+
+.proje_alan {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 
 
 .card_proje {
-    color: white;
-    width: 295px;
-    height: 254px;
-    position: relative;
-    border-radius: 8px;
-    line-height: 150%;
-    background: #ff930f;
-    background: linear-gradient(to top, #ff930f, #ffcc33);
-    transition: background-color 1s ease-in-out;
-    overflow: hidden;
-    
-    background-size: cover;
-  }
-  .card_proje:nth-child(1){
-    background-image: url("../resim/yeni-carusel.jpeg");
-   
-  }
-  .card_proje:nth-child(3) {
-    background-image: url("../resim/resim3.jpg");
-  }
- 
-  
-  .card-front {
-    bottom: 16px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    background-color: rgba(81, 81, 206, 0.692);
-  }
-  
-  .card-back {
-    height: 100%;
-    background-color: rgba(81, 81, 206, 0.692);
-    transform: translateX(120%);
-    transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    
-  }
-  
-  
-  /*Text*/
-  .title {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  /*Text divider*/
-  .title::after {
-    content: "";
-    display: block;
-    width: 50%;
-    border-radius: 50%;
-    height: 2px;
-    margin: 2px auto;
-    background-color: white;
-  }
-  
-  
-  /*Hover*/
-  .card_proje:hover {
-    background-color: #1b1b1b25;
-  }
-  
-  .card_proje:hover .card-front {
-    transform: translateX(0);
-  }
-  
-  .card_proje:hover .card-back {
-    transform: translateX(0);
-    
-    
-  }
-  .projec_container{
-    position: absolute;
-    top: 50px;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: auto;
-    background-color: rgb(81, 81, 206);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s all;
-  }
-  .projec_container .x{
-    font-size: 50px;
-    color: white;
-    position: fixed;
-    right: 50px;
-    top: 50px;
-  }
-  .projec_closed{
-    transform: translateX(-100%);
-    transition:ease-in-out 1s all;
-    
-  }
-  .projec_open{
-    display: inline-block;
-    transition:ease-in-out 1s all;
-    
-  }
-  .projec_detail_container{
-    width: 90%;
-    height: 100%;
-    z-index: 66;
-    background-color: rgba(81, 81, 206, 0.904);
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .projec_detail_container .projec_image{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 30px;
-  }
-  .projec_detail_container .projec_image .image__{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-  }
-  .projec_detail_container .projec_image img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-  .projec_detail_container .projec_detail {
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .projec_detail_container .projec_detail .new_detail{
-    width: 65%;
-  }
-  .projec_detail_container .projec_detail h1 {
-    color: white;
-  }
-  .projec_detail_container .projec_detail p {
-    color: white;
-    width: 100%;
-    font-size: 19px;
-  }
-  
-  @media (max-width:441px) {
-    .projeler_container{
-      padding-left: 20px;
-    }
-    
-  }
-  @media (max-width:1224px){
-   
-  }
-  @media (max-width:892px){
-    .projec_detail_container .projec_image .image__ img{
-      width: 170px;
-      height: 200px;
-    }
-   
+  color: white;
+  width: 295px;
+  height: 254px;
+  position: relative;
+  border-radius: 8px;
+  line-height: 150%;
+  background: #ff930f;
+  background: linear-gradient(to top, #ff930f, #ffcc33);
+  transition: background-color 1s ease-in-out;
+  overflow: hidden;
+
+  background-size: cover;
+}
+
+.card_proje:nth-child(1) {
+  background-image: url("../resim/yeni-carusel.jpeg");
+
+}
+
+.card_proje:nth-child(3) {
+  background-image: url("../resim/resim3.jpg");
+}
+
+
+.card-front {
+  bottom: 16px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  background-color: rgba(81, 81, 206, 0.692);
+}
+
+.card-back {
+  height: 100%;
+  background-color: rgba(81, 81, 206, 0.692);
+  transform: translateX(120%);
+  transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+}
+
+
+/*Text*/
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*Text divider*/
+.title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  height: 2px;
+  margin: 2px auto;
+  background-color: white;
+}
+
+
+/*Hover*/
+.card_proje:hover {
+  background-color: #1b1b1b25;
+}
+
+.card_proje:hover .card-front {
+  transform: translateX(0);
+}
+
+.card_proje:hover .card-back {
+  transform: translateX(0);
+
+
+}
+
+.projec_container {
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(81, 81, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
+}
+
+.projec_container .x {
+  font-size: 50px;
+  color: white;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  -webkit-text-stroke: 2px #0e112e;
+}
+
+.projec_closed {
+  transform: translateX(-100%);
+  transition: ease-in-out 1s all;
+
+}
+
+.projec_open {
+  display: inline-block;
+  transition: ease-in-out 1s all;
+
+}
+
+.projec_detail_container {
+  width: 90%;
+  height: 100%;
+  z-index: 66;
+  background-color: rgba(81, 81, 206, 0.904);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.projec_detail_container .projec_image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.projec_detail_container .projec_image .image__ {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.projec_detail_container .projec_image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.projec_detail_container .projec_detail {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projec_detail_container .projec_detail .new_detail {
+  width: 65%;
+}
+
+.projec_detail_container .projec_detail h1 {
+  color: white;
+}
+
+.projec_detail_container .projec_detail p {
+  color: white;
+  width: 100%;
+  font-size: 19px;
+}
+
+@media (max-width:441px) {
+  .projeler_container {
+    padding-left: 20px;
   }
 
-  
+}
+
+@media (max-width:695px) {
+  .projec_detail_container .projec_image img {
+    height: 290px;
+  }
+}
+
+@media (max-width:459px) {
+  .projec_container {
+    height: 284vh;
+  }
+
+  .projec_detail_container .projec_image {
+    margin: 0px;
+    height: 1300px;
+  }
+
+  .projec_detail_container .projec_image .image__ {
+    height: 90%;
+    gap: 0;
+  }
+
+  .projec_detail_container .projec_image .image__ img {
+    width: 90%;
+    height: 100px;
+  }
+
+  .projec_detail_container .projec_detail h1 {
+    width: 100%;
+  }
+
+  .projec_detail_container .projec_detail .new_detail {
+    width: 100%;
+  }
+
+}
