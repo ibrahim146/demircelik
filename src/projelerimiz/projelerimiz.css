@@ -36,7 +36,7 @@
   background: linear-gradient(to top, #ff930f, #ffcc33);
   transition: background-color 1s ease-in-out;
   overflow: hidden;
-
+  box-shadow: 0px 15px 20px -5px rgba(104, 100, 235, 0.5);
   background-size: cover;
 }
 
@@ -144,6 +144,7 @@
   background-color: rgba(81, 81, 206, 0.904);
   overflow: hidden;
   box-sizing: border-box;
+  
 }
 
 .projec_detail_container .projec_image {
@@ -154,6 +155,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 30px;
+  
 }
 
 .projec_detail_container .projec_image .image__ {
@@ -164,12 +166,14 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+ 
 }
 
 .projec_detail_container .projec_image img {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  box-shadow: 0px 15px 20px -5px rgba(242, 235, 235, 0.5);
 }
 
 .projec_detail_container .projec_detail {

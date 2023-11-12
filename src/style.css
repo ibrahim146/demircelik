@@ -419,8 +419,8 @@
   }
   
   .card {
-    width: 600px;
-    height: min-content;
+    width: 400px;
+    height: 430px;
     transition: all .3s;
     position: relative;
     border-radius: .5rem 2rem;

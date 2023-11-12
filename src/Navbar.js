@@ -31,10 +31,10 @@ const Navbar = () => {
         </div>
         <div className='barss'>
         <input className='name' type="checkbox" id="checkbox" ref={inputRef} />
-          <label  htmlFor="checkbox" class="toggle" onClick={() => {setbarsclass(barsclass === "menü" ? "close" : "menü")}}>
-           <div class="bars" id="bar1"></div>
-            <div class="bars" id="bar2"></div>
-            <div class="bars" id="bar3"></div>
+          <label  htmlFor="checkbox" className="toggle" onClick={() => {setbarsclass(barsclass === "menü" ? "close" : "menü")}}>
+           <div className="bars" id="bar1"></div>
+            <div className="bars" id="bar2"></div>
+            <div className="bars" id="bar3"></div>
           </label>
         </div>
       </div>

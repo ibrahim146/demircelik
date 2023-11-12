@@ -1,4 +1,4 @@
-import {useRef} from 'react';
+import { useRef } from 'react';
 import "./iletişim.css";
 import Foterr from "../Foterr";
 import emailjs from '@emailjs/browser';
@@ -9,38 +9,38 @@ const İletişim = () => {
 
     emailjs.sendForm('service_allypcw', 'template_9i36ub5', form.current, 'aTGXNX5UuWlL1wWGr')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-      e.target.reset()
-  } 
+    e.target.reset()
+  }
   return (
     <>
       <div className='iletişim_container'>
         <div className='iletişim_location'>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192679.2840248239!2d28.826051942934704!3d41.011825171829344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4dd28c889df%3A0xcb31bc1a4d01732e!2sYeti%C5%9F%20Metal!5e0!3m2!1str!2str!4v1699201619900!5m2!1str!2str" width="100%" height="450" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192679.2840248239!2d28.826051942934704!3d41.011825171829344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4dd28c889df%3A0xcb31bc1a4d01732e!2sYeti%C5%9F%20Metal!5e0!3m2!1str!2str!4v1699201619900!5m2!1str!2str" width="100%" height="450" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className='iletişim_text'>
-          <div class="carddd" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <span class="titlee">BİZE ULAŞIN</span>
+          <div className="carddd" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <span className="titlee">BİZE ULAŞIN</span>
             <form ref={form} onSubmit={sendEmail} class="form">
-              <div class="group">
-                <input placeholder='' type="text" required="zorunlu alan" name='user_name'/>
-                <label for="name">İSİM</label>
+              <div className="group">
+                <input placeholder='' type="text" required="zorunlu alan" name='user_name' />
+                <label htmlFor="name">İSİM</label>
               </div>
-              <div class="group">
-                <input placeholder='' type="text" required="zorunlu alan" name='user_surname'/>
-                <label for="name">SOY İSİM</label>
+              <div className="group">
+                <input placeholder='' type="text" required="zorunlu alan" name='user_surname' />
+                <label htmlFor="name">SOY İSİM</label>
               </div>
-              <div class="group">
+              <div className="group">
                 <input placeholder="" type="email" id="email" name="user_email" required="zorunlu alan" />
-                <label for="">EMAİL</label>
+                <label htmlFor="">EMAİL</label>
               </div>
-              <div class="group">
+              <div className="group">
                 <textarea placeholder="" id="comment" name="message" rows="5" required="zorunlu alan"></textarea>
-                <label for="comment">MESAJINIZ...</label>
+                <label htmlFor="comment">MESAJINIZ...</label>
               </div>
               <button type="submit">GÖNDER</button>
             </form>
@@ -60,7 +60,7 @@ const İletişim = () => {
             <h1><i className='fa fa-envelope' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"></i> E-mail</h1>
             <a href="mailto:" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> sadikyetis194@gmail.com</a>
           </div>
-          
+
         </div>
       </div>
       <Foterr />

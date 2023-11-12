@@ -1,13 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import kapak from "./resim/kapak.JPEG"
+import kapak1 from "./resim/kapak2.JPG"
 const   Cart = () => {
   return (
     
 <div className='alan'>
 <Link to="/çelik-konstrüksiyon-ve-ferforje-grubu" class="card" data-aos="fade-right">
-  <div class="img-container">
-    <div class="img">
-      <img src="https://picsum.photos/id/111/600/600" alt="" />
+  <div className="img-container">
+    <div className="img">
+      <img width="100%" height="100%" src={kapak} alt="" />
     </div>
     <div class="description cardd">
       <span class="titlee">
@@ -21,7 +23,7 @@ const   Cart = () => {
 <Link to="/ofis-metal-aksamları-grubu" class="card" data-aos="fade-left">
   <div class="img-container">
     <div class="img">
-      <img src="https://picsum.photos/id/115/600/600" alt="" />
+      <img width="100%" height="100%" src={kapak1} alt="" />
     </div>
     <div class="description cardd">
       <span  class="titlee">

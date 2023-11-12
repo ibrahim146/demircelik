@@ -29,15 +29,16 @@ img {
     left: 50%;
     top: 50%;
     transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(0deg) rotateX(0deg);
-    
+
 }
 
 .images-line {
     animation: runner var(--duration) linear infinite;
     display: flex;
     transform: translateX(23%);
-    
+
 }
+
 .images-line:nth-child(even) {
     animation-duration: calc(var(--duration) * 1.5);
 }
@@ -54,6 +55,7 @@ img {
     border-radius: 1rem;
 
 }
+
 .line:after {
     content: "";
     background: inherit;
@@ -74,9 +76,11 @@ img {
     transform: scale(1.5) translatez(0px);
 
 }
+
 .line:after {
     filter: blur(35px) opacity(0.8);
 }
+
 .images-line .img {
     position: absolute;
     z-index: 2;
@@ -114,16 +118,18 @@ img {
     cursor: pointer;
     z-index: 100;
 
-    
+
 }
+
 a {
     text-decoration: none;
     font-weight: bold;
     color: #111;
     transition: ease all 0.3s;
 
-   
+
 }
+
 a:hover {
     color: #ef5350;
     text-decoration: underline;
@@ -149,18 +155,20 @@ a:hover {
         margin-top: 0%;
 
     }
-    .wrapper-images  .line {
+
+    .wrapper-images .line {
         width: 10vh;
         height: 15vh;
 
-       
+
     }
+
     .wrapper-images .line:hover .img {
-        
-            cursor: pointer;
-            transform: scale(1.2) translatez(0px);
-            z-index: 56;
-        
+
+        cursor: pointer;
+        transform: scale(1.2) translatez(0px);
+        z-index: 56;
+
     }
 }
 
@@ -179,18 +187,20 @@ a:hover {
         width: 100%;
         margin-top: 0%;
 
-       
+
     }
-    .wrapper-images  .line {
+
+    .wrapper-images .line {
         width: 10vh;
         height: 15vh;
 
     }
-    .wrapper-images .line:hover .img{
-        
-            cursor: pointer;
-            transform: scale(1.4) translatez(0px);
-            z-index: 56;
-        
+
+    .wrapper-images .line:hover .img {
+
+        cursor: pointer;
+        transform: scale(1.4) translatez(0px);
+        z-index: 56;
+
     }
 }

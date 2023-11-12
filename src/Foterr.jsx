@@ -23,7 +23,7 @@ const Foterr = () => {
                     <Link to="/iletişim" >iletisim</Link>
                 </li>
             </ul>
-            <p className='copyright'>future coders @ 2023 - ibrahim akyel -</p>
+            <p className='copyright'>future coders @ 2023</p>
         </section >
     )
 }
