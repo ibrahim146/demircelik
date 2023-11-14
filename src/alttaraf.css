@@ -43,8 +43,8 @@ html {
     border-radius: 10px;
 }
 .imagedetail{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 1000px;
     text-align: center;
     
 }
@@ -52,7 +52,7 @@ html {
 @media  screen and (max-width:1150px) {
     .altcontainer{
         width: 100vw;
-        height:760px;
+        height:1000px;
       
     }
 }

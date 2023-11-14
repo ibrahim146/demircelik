@@ -144,7 +144,7 @@
   background-color: rgba(81, 81, 206, 0.904);
   overflow: hidden;
   box-sizing: border-box;
-  
+
 }
 
 .projec_detail_container .projec_image {
@@ -155,7 +155,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 30px;
-  
+
 }
 
 .projec_detail_container .projec_image .image__ {
@@ -166,7 +166,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
- 
+
 }
 
 .projec_detail_container .projec_image img {

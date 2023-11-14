@@ -24,7 +24,7 @@ function Carusel() {
     clearInterval(intervalId); 
     intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 12000);
+    }, 15000);
   }
     
   // prewslide işlevini güncelle
@@ -133,8 +133,8 @@ function Carusel() {
       <Alttaraf2 />
 
       <Foterr />
-
     </>
+    
   );
 }
 
