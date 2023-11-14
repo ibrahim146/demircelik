@@ -8,51 +8,39 @@ import Alttaraf2 from '../Alttaraf2';
 
 function Carusel() {
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  let intervalId; 
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 6000);
+    startTimer(); 
 
     return () => {
-      clearInterval(interval);
+      clearInterval(intervalId); 
     };
-  }, []);
-  const [activeIndex, setActiveIndex] = useState(0);
+  }, [activeIndex]);
 
-  let index = 3;
+  // Zamanlayıcıyı başlatan işlev
+  function startTimer() {
+    clearInterval(intervalId); 
+    intervalId = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 15000);
+  }
+    
+  // prewslide işlevini güncelle
   function prewslide() {
-
-    if (index === 0) {
-      index = 3;
-
+    if (activeIndex === 0) {
+      setActiveIndex(2); 
     } else {
-      index--;
-      if (index == 0) {
-        prewslide()
-      }
+      setActiveIndex((prevIndex) => prevIndex - 1);
     }
-    changeslide()
+    startTimer(); 
   }
 
-  // next slider *********************
+  // nextslide işlevini güncelle
   function netxslide() {
-
-    if (index === 4) {
-      index = 1;
-    } else {
-      index++;
-      if (index === 4) {
-        index = 0;
-        netxslide();
-      }
-
-    }
-    changeslide()
-  }
-
-  function changeslide() {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-
+    startTimer(); 
   }
 
   return (
@@ -62,7 +50,7 @@ function Carusel() {
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
               <h1>ofis grubu</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <p>lorem lorem  asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
