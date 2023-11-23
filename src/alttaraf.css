@@ -41,19 +41,25 @@ html {
     width: 700px;
     height: 400px;
     border-radius: 10px;
+    overflow: hidden;
 }
 .imagedetail{
     width: 500px;
-    height: 1000px;
-    text-align: center;
-    
+    height: 180px;
+}
+
+.heightt {
+    height: 468px;
 }
 
 @media  screen and (max-width:1150px) {
     .altcontainer{
         width: 100vw;
-        height:1000px;
+        height:700px;
       
+    }
+    .heightt {
+        height: 900px;
     }
 }
 @media screen and (max-width:600px){

@@ -28,7 +28,8 @@ code {
 }
 
 .slide:nth-child(3) {
-  background-image: url("./image/yeni-carusel.jpeg");
+  background-image: url("./resim/kapak3.JPEG");
+  background-position-y: 90%;
 }
 
 .slide {
@@ -138,7 +139,7 @@ code {
   }
 
   .slide:nth-child(3) {
-    background-image: url("./image/phone-image1.jpg");
+    background-image: url("./resim/kapak3mobile.JPEG");
   }
 }
 

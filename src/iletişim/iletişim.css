@@ -23,7 +23,7 @@
 
 .iletişim_text2{
   width: 80%;
-  height: 450px;
+  min-height: 350px;
   border-radius: 20px;
   display: flex;
   justify-content: center;

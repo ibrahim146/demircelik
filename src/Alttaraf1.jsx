@@ -4,7 +4,7 @@ import ortaimage from "../src/image/resimm.jpeg"
 const Alttaraf1 = () => {
   return (
     <>
-      <div className='altcontainer' data-aos="fade-left"
+      <div className='altcontainer heightt'  data-aos="fade-left"
         data-aos-anchor="#example-anchor"
         data-aos-offset="500"
         data-aos-duration="500" style={{ backgroundColor: "rgba(81, 81, 206, 0.81)", color: "white" }}>
